@@ -1,6 +1,6 @@
 # Torque Studio · Senior design on subscription
 
-> A lead designer and a head of operations on your team, not on your payroll. Design direction for product companies and consumer brands that need a lot of design, fast. Ads, campaigns, websites, decks and landing pages: thought through by hand, produced with AI in the engine room, shipped in days, not months. On subscription. One flat monthly fee. No long contracts.
+> A senior designer and a head of operations on your team, not on your payroll. Design direction for product companies and consumer brands that need a lot of design, fast. Ads, campaigns, websites, decks and landing pages: thought through by hand, produced with AI in the engine room, shipped in days, not months. On subscription. One flat monthly fee. No long contracts.
 
 ## Who
 
@@ -48,7 +48,7 @@ Client work is under NDA. These five are concept brands that show how the studio
 Product companies and consumer brands that need a lot of design at a steady pace: launches, campaigns, ads, decks, all speaking one visual language. If you need a single logo or a full rebrand, an agency will serve you better.
 
 **How does the subscription work?**
-One flat monthly fee covers a lead designer, a head of operations and a production engine. In the first week we build your design system. After that, your requests go into a queue in your private Slack channel and come back within 3 working days, each with up to three rounds of revisions. Depending on your plan, one, two or three requests are in progress at the same time. Pavlo owns every design decision, Anastasiia runs the queue and the deadlines.
+One flat monthly fee covers a senior designer, a head of operations and a production engine. In the first week we build your design system. After that, your requests go into a queue in your private Slack channel and come back within 3 working days, each with up to three rounds of revisions. Depending on your plan, one, two or three requests are in progress at the same time. Pavlo owns every design decision, Anastasiia runs the queue and the deadlines.
 
 **How is the price set?**
 There are three plans, depending on how many requests you need in progress at the same time: one, two or three. We'll recommend the right one on a 15-minute call, and the fee stays flat until you change plans. No hourly meter, no hidden extras.
