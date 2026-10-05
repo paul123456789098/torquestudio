@@ -1,12 +1,12 @@
-# Torque Studio · Design direction on subscription
+# Torque Studio · Senior design on subscription
 
-> A lead designer and a head of operations on your team, not on your payroll. Design direction for product companies and consumer brands that need a lot of design, fast. Websites, campaigns and decks: thought through by hand, produced with AI in the engine room, shipped in days, not months. On subscription. One flat monthly fee, sized to your workload.
+> A lead designer and a head of operations on your team, not on your payroll. Senior design for product companies and consumer brands that need a lot of design, fast. Ads, campaigns, decks and landing pages: thought through by hand, produced with AI in the engine room, shipped in days, not months. On subscription. One flat monthly fee. No long contracts.
 
 ## Who
 
 Torque Studio is a design studio on subscription run by two people.
 
-- Pavlo Lobodiuk, Lead Brand Designer. Ten years in design, the last three running production on AI. I set the idea, the story and the rules, the engine produces the volume, and Anastasiia keeps every deadline on track. You get more directions, faster, with the same taste behind every one of them.
+- Pavlo Lobodiuk, Founder · Lead Designer. Ten years in design, the last three running production on AI. I set the idea, the story and the rules, the engine produces the volume, and Anastasiia keeps every deadline on track. You get more directions, faster, with the same taste behind every one of them.
 - Anastasiia Odegova, Head of Operations. I keep the engine running: your queue, your deadlines, every call. Nine years in marketing, Meta and LinkedIn campaigns, personal brands for B2B founders: I speak your team's language and turn requests into clear tasks. Pavlo designs, you never chase anyone.
 - Why the two of us: A great designer alone is a freelancer. A great designer with someone running the process is a studio you can rely on. Pavlo owns every design decision. Anastasiia makes sure it arrives on time, every time.
 
@@ -20,22 +20,22 @@ You need design every week. Not a hiring process.
 ## Our Flow (how it works)
 
 A lead designer who owns the thinking, a head of operations who owns the deadlines, and a production engine that does the work of a team. Fewer meetings, faster iterations, one team responsible for the whole picture.
-1. **We talk**: One conversation about what you are building and where it has to go. No forms, no brief templates.
+1. **We talk**: One call about what you are building and where it has to go. We look at your website before we meet, so we start with ideas, not small talk.
 2. **We think**: Research, references, the idea. You get a direction with a point of view, not a mood board, and usually more than one to choose from.
 3. **The engine runs**: AI does the heavy production inside the rules we set: variants, formats, sizes. Every piece passes through our hands before it reaches yours.
-4. **It keeps running**: Every new request goes into your queue and usually comes back within 72 hours, built on the same system. Month after month.
+4. **It keeps running**: Every new request goes into your queue and comes back within 3 working days, built on the same system. Month after month.
 
 ## Services: everything your marketing runs on
 
-- **Landing pages & websites**: Designed, built, launched and kept up to date. No developers, no handoff, no waiting.
+- **Campaign landing pages**: Single pages for ads, launches and events. Designed, built, launched and hosted, no developer needed.
 - **Ad creatives**: Several versions to test, not one pretty version.
 - **Pitch decks**: Complex product stories made simple for investors and buyers.
 - **Social media**: Posts, carousels, covers. Consistent every week.
-- **Visuals & motion**: Product shots, campaign imagery, animated banners, short video.
+- **AI visuals & video**: Product shots, campaign imagery, animated banners and short AI video.
 
 ## Selected work
 
-Client work is under NDA. These five are concept brands built end to end, the way the studio builds yours: one idea carried through the identity, the website and the campaign.
+Client work is under NDA. These five are concept brands that show how the studio thinks: one idea carried through every campaign, ad and page.
 - **Running Shoes**: Show the engineering, skip the hype.
 - **Architecture Firm**: Feel the buildings before you meet the architect.
 - **Urban Sunglasses**: Six frames. 640 pairs. Then gone.
@@ -45,27 +45,37 @@ Client work is under NDA. These five are concept brands built end to end, the wa
 ## FAQ
 
 **Who is this for?**
-Product companies and consumer brands that need a lot of design at a steady pace: launches, campaigns, a website, a deck, all speaking one visual language. If you need a single logo and nothing after it, an agency or a marketplace will serve you better.
+Product companies and consumer brands that need a lot of design at a steady pace: launches, campaigns, ads, decks, all speaking one visual language. If you need a single logo or a full rebrand, an agency will serve you better.
 
 **How does the subscription work?**
-One flat monthly fee covers a lead designer, a head of operations and a production engine. A first direction usually appears within the first week. After that, your requests go into a queue and usually come back within 72 hours, each one built on the same system, so the brand gets stronger month after month. Bigger pieces, a website or a full identity, are planned across the month and agreed up front. Pavlo owns every design decision, Anastasiia runs the queue and the deadlines.
+One flat monthly fee covers a lead designer, a head of operations and a production engine. In the first week we build your design system. After that, your requests go into a queue in your private Slack channel and come back within 3 working days, each with up to three rounds of revisions. Depending on your plan, one, two or three requests are in progress at the same time. Pavlo owns every design decision, Anastasiia runs the queue and the deadlines.
 
 **How is the price set?**
-Individually. The monthly fee depends on how much design you need and in which formats: a steady flow of social posts is one number, a website plus a campaign every month is another. We agree the scope on the first call, and the fee stays flat until you change the scope. No hourly meter.
+There are three plans, depending on how many requests you need in progress at the same time: one, two or three. We'll recommend the right one on a 15-minute call, and the fee stays flat until you change plans. No hourly meter, no hidden extras.
 
 **What exactly do I get?**
-A brand world, not a file: the identity and its rules, the website, the campaign visuals and the deck, all built on one idea. You own everything from day one. The engine produces, we correct and sharpen, so each new piece lands on the same system as the last.
+Design every week, not a single file: ad creatives, social media, presentations and pitch decks, AI visuals and video, and campaign landing pages, all built on one system. You own everything once paid, source files included. Logos, rebrands and print are not part of the subscription.
 
 **Is this AI-generated design? Will it look like every other AI image?**
 AI is the production line, not the designer. The idea, the direction and the rules are set by hand first; AI then does the production work inside those rules, and every piece is reviewed before you see it. That is why the results look like your brand and not like a stock render.
 
 **What do you need from me to start?**
-One conversation: what you sell, who buys it, where you want to be in a year, and what you already have. Nothing yet is fine; a brand book is welcome, we work with existing brands as often as from zero. After that conversation you get the scope and the monthly fee in writing, and we start.
-
+One conversation: what you sell, who buys it, where you want to be in a year, and what you already have. Bring your brand book, logo files and fonts if you have them. After the call you get the plan and the monthly fee in writing, and we start within 48 hours.
 
 **What if I don't like the first direction?**
 You will see several directions early, not one finished thing at the end. Choosing between real options is the point of the process, and changing course early costs nothing.
 
+**What if it's not a fit?**
+Your first month comes with a guarantee. If you feel it's not working, you can stop right away, and we refund the remaining working days.
+
+**Can I pause or cancel?**
+Yes. The subscription is month to month. Give us two weeks' notice to pause or cancel, and your unused working days are saved for later.
+
+**Do you build full company websites?**
+Not as part of the subscription. We build them as a separate project, priced by pages and functionality. Campaign landing pages for ads, launches and events are included in our Full Throttle plan.
+
+**What if we're in a different time zone?**
+We work async in Slack, so you don't need to be online at the same time. Our working hours are 10:00 to 18:00 CET, Monday to Friday, and we follow the Spanish holiday calendar, so you always know in advance when we're off.
 
 ## Experience
 
@@ -88,6 +98,9 @@ Anastasiia Odegova
 - Email: hello@torquestudio.es
 - LinkedIn: https://www.linkedin.com/in/ai-driven-design/
 - Website: https://torquestudio.es/
+- Book a 15-minute call: https://calendar.google.com/calendar/appointments/schedules/AcZssZ13LBSq_zH-uYeL_PgZX5RaD-rMOkCuVl2byXulcx0AfXcWe0EbI6Db2VogqigTmObeKSGUcPWC?gv=true
+- Legal notice: https://torquestudio.es/legal
+- Privacy policy: https://torquestudio.es/privacy
 
 ## Meta
 
