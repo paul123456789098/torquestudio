@@ -112,13 +112,13 @@ body.grabbing,body.grabbing *{-webkit-user-select:none!important;user-select:non
   function rs(){var sc=scale(),w=Math.max(2,(innerWidth*sc)|0),h=Math.max(2,(innerHeight*sc)|0);cv.width=w;cv.height=h;gl.viewport(0,0,w,h);}
   rs(); addEventListener('resize',rs);
   var mx=innerWidth/2,my=innerHeight/2; addEventListener('pointermove',function(e){ mx=e.clientX; my=e.clientY; },{passive:true});
-  var muX=0.5,muY=0.5,t0=performance.now(),minDt=isMob?66:41,lastF=0;
+  var muX=0.5,muY=0.5,t0=performance.now(),minDt=isMob?66:41,lastF=0,lastF2=0;
   (function frame(now){
     if(rm){ gl.uniform2f(uR,cv.width,cv.height);gl.uniform1f(uT,0.0);gl.uniform2f(uM,0.5,0.5);gl.drawArrays(gl.TRIANGLES,0,3); return; }
     requestAnimationFrame(frame);
     if(document.hidden) return;
     if(minDt&&now-lastF<minDt)return; lastF=now;
-    var tt=(now-t0)*0.001;muX+=((mx/innerWidth)-muX)*0.05;muY+=((1.0-my/innerHeight)-muY)*0.05;
+    var tt=(now-t0)*0.001, kf=1-Math.exp(-(now-(lastF2||now))/180); lastF2=now; muX+=((mx/innerWidth)-muX)*kf;muY+=((1.0-my/innerHeight)-muY)*kf;   /* time-based easing (~0.18 s), so the blob keeps up with the mouse */
     gl.uniform2f(uR,cv.width,cv.height);gl.uniform1f(uT,tt);gl.uniform2f(uM,muX,muY);gl.drawArrays(gl.TRIANGLES,0,3);})(t0);
 })();
 </script>
