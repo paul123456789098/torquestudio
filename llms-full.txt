@@ -6,7 +6,7 @@
 
 Torque Studio is a design studio on subscription run by two people.
 
-- Pavlo Lobodiuk, Founder · Lead Designer. Ten years in design, the last three running production on AI. I set the idea, the story and the rules, the engine produces the volume, and Anastasiia keeps every deadline on track. You get more directions, faster, with the same taste behind every one of them.
+- Pavlo Lobodiuk, Founder · Senior Designer. Ten years in design, the last three running production on AI. I set the idea, the story and the rules, the engine produces the volume, and Anastasiia keeps every deadline on track. You get more directions, faster, with the same taste behind every one of them.
 - Anastasiia Odegova, Head of Operations. I keep the engine running: your queue, your deadlines, every call. Nine years in marketing, Meta and LinkedIn campaigns, personal brands for B2B founders: I speak your team's language and turn requests into clear tasks. Pavlo designs, you never chase anyone.
 - Why the two of us: A great designer alone is a freelancer. A great designer with someone running the process is a studio you can rely on. Pavlo owns every design decision. Anastasiia makes sure it arrives on time, every time.
 
@@ -19,7 +19,7 @@ You need design every week. Not a hiring process.
 
 ## Our Flow (how it works)
 
-A lead designer who owns the thinking, a head of operations who owns the deadlines, and a production engine that does the work of a team. Fewer meetings, faster iterations, one team responsible for the whole picture.
+A Senior Designer who owns the thinking, a Head of Operations who owns the deadlines, and a production engine that does the work of a team. Fewer meetings, faster iterations, one team responsible for the whole picture.
 1. **We talk**: One call about what you are building and where it has to go. We look at your website before we meet, so we start with ideas, not small talk.
 2. **We think**: Research, references, the idea. You get a direction with a point of view, not a mood board, and usually more than one to choose from.
 3. **The engine runs**: AI does the heavy production inside the rules we set: variants, formats, sizes. Every piece passes through our hands before it reaches yours.
@@ -72,7 +72,7 @@ Your first month comes with a guarantee. If you feel it's not working, you can s
 Yes. The subscription is month to month. Give us two weeks' notice to pause or cancel, and your unused working days are saved for later.
 
 **Do you build full company websites?**
-Not as part of the subscription. We build them as a separate project, priced by pages and functionality. Campaign landing pages for ads, launches and events are included in our Full Throttle plan.
+Yes, as a separate project outside the subscription. A full company website is designed, built, launched and hosted by us and priced by the number of pages and functionality, so it does not take time away from your monthly queue. Campaign landing pages for ads, launches and events are included in our Full Throttle plan.
 
 **What if we're in a different time zone?**
 We work async in Slack, so you don't need to be online at the same time. Our working hours are 10:00 to 18:00 CET, Monday to Friday, and we follow the Spanish holiday calendar, so you always know in advance when we're off.
@@ -98,7 +98,7 @@ Anastasiia Odegova
 - Email: hello@torquestudio.es
 - LinkedIn: https://www.linkedin.com/in/ai-driven-design/
 - Website: https://torquestudio.es/
-- Book a 15-minute call: https://calendar.google.com/calendar/appointments/schedules/AcZssZ13LBSq_zH-uYeL_PgZX5RaD-rMOkCuVl2byXulcx0AfXcWe0EbI6Db2VogqigTmObeKSGUcPWC?gv=true
+- Book a discovery call: https://calendar.google.com/calendar/appointments/schedules/AcZssZ13LBSq_zH-uYeL_PgZX5RaD-rMOkCuVl2byXulcx0AfXcWe0EbI6Db2VogqigTmObeKSGUcPWC?gv=true
 - Legal notice: https://torquestudio.es/legal
 - Privacy policy: https://torquestudio.es/privacy
 
