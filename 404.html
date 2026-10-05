@@ -33,7 +33,7 @@ main{position:relative;z-index:2;min-height:100svh;display:flex;flex-direction:c
 .hint.gone{opacity:0}
 .hint svg{width:13px;height:13px;color:rgba(255,208,150,.85);animation:rock 3.6s ease-in-out infinite}
 @keyframes rock{0%,100%{transform:translateY(1.5px)}50%{transform:translateY(-3px)}}
-.eyebrow{margin-top:28px;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--faint)}
+.eyebrow{margin-top:34px;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--faint)}
 h1{font-family:var(--serif);font-weight:500;font-size:clamp(1.7rem,3.4vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin-top:12px}
 .lead{max-width:34em;margin:14px auto 0;color:var(--muted);font-size:1.02rem}
 .cta{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;margin-top:30px}
@@ -62,7 +62,6 @@ body.grabbing,body.grabbing *{-webkit-user-select:none!important;user-select:non
 </header>
 <main>
   <div class="stage" aria-hidden="true"></div>
-  <span class="hint" id="hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>Drag the numbers to rotate</span>
   <p class="eyebrow">Error 404</p>
   <h1>This page does not exist.</h1>
   <p class="lead">The link is old, or the address has a typo. Everything that does exist is one click away.</p>
