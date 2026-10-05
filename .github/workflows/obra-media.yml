@@ -1,0 +1,77 @@
+name: Obra Gris media
+
+# The Architecture Firm concept site streams six clips and five stills from the
+# generator's CDN. This job copies them into the repository once, so the site no
+# longer depends on that CDN. It runs on every push and does nothing when the
+# files are already here.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: obra-media
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download the files that are missing
+        id: dl
+        run: |
+          set -u
+          mkdir -p pmedia
+          added=0; failed=0
+          files=(
+            "obra-fcbd4237bc05.png https://d8j0ntlcm91z4.cloudfront.net/user_341iYYUOTJKnlaaZ1kdoVHRaYS8/hf_20260910_100603_8a306719-96f8-45e7-b55b-092ab86bb54d.png"
+            "obra-320642a5431e.png https://d8j0ntlcm91z4.cloudfront.net/user_341iYYUOTJKnlaaZ1kdoVHRaYS8/hf_20260910_100604_517cf44d-a299-4f84-9b5d-9e643611b9e8.png"
+            "obra-70d5a76bac00.png https://d8j0ntlcm91z4.cloudfront.net/user_341iYYUOTJKnlaaZ1kdoVHRaYS8/hf_20260910_100604_64b0e8ca-91a3-4e1f-9e75-86ab37bde9f3.png"
+            "obra-a9be3b8f0672.png https://d8j0ntlcm91z4.cloudfront.net/user_341iYYUOTJKnlaaZ1kdoVHRaYS8/hf_20260910_100604_b25b14e6-b6a8-474e-88fc-986f127eabf4.png"
+            "obra-78e7282a7e3d.png https://d8j0ntlcm91z4.cloudfront.net/user_341iYYUOTJKnlaaZ1kdoVHRaYS8/hf_20260910_100604_f9a89007-6504-4b42-874b-0d4ec8d771f5.png"
+            "obra-3b40bffd9011.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_341iYYUOTJKnlaaZ1kdoVHRaYS8/hf_20260910_101337_242a091b-2318-45c2-bf06-084304dd4f62.mp4"
+            "obra-1fcb6f2812c8.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_341iYYUOTJKnlaaZ1kdoVHRaYS8/hf_20260910_101337_c912c989-a436-4713-a4d7-1a7f6bcb5334.mp4"
+            "obra-247bcfc1cf6d.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_341iYYUOTJKnlaaZ1kdoVHRaYS8/hf_20260910_101337_cee03453-5ca5-4092-a159-e3b67b23bd0e.mp4"
+            "obra-0500578d66a7.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_341iYYUOTJKnlaaZ1kdoVHRaYS8/hf_20260910_101337_da228389-e40a-41cc-a146-97ed9ccaed8a.mp4"
+            "obra-db3a3cd8dda8.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_341iYYUOTJKnlaaZ1kdoVHRaYS8/hf_20260910_101348_e405f068-690f-44e3-a9f7-eb0520a9e159.mp4"
+            "obra-0b2a30f96cce.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_341iYYUOTJKnlaaZ1kdoVHRaYS8/hf_20260910_101349_9a0f46f7-2a98-4f45-a4c8-e90a7ecd4e37.mp4"
+          )
+          for f in "${files[@]}"; do
+            name="${f%% *}"; url="${f#* }"
+            if [ -s "pmedia/$name" ]; then continue; fi
+            if curl -fsSL --retry 4 --retry-delay 5 -m 300 -A "Mozilla/5.0" -o "pmedia/$name" "$url" && [ -s "pmedia/$name" ]; then
+              echo "  ok   $name ($(du -h "pmedia/$name" | cut -f1))"; added=$((added+1))
+            else
+              echo "  FAIL $name  $url"; rm -f "pmedia/$name"; failed=$((failed+1))
+            fi
+          done
+          echo "added=$added" >> "$GITHUB_OUTPUT"
+          echo "failed=$failed" >> "$GITHUB_OUTPUT"
+          echo "downloaded $added, failed $failed"
+
+      - name: Commit them
+        if: steps.dl.outputs.added != '0'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pmedia/obra-*
+          git commit -m "Obra Gris media served from the site, not the CDN"
+          git push
+
+      - name: Ask Pages to rebuild
+        if: steps.dl.outputs.added != '0'
+        run: |
+          curl -sS -X POST -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/repos/${{ github.repository }}/pages/builds" || true
+
+      - name: Fail loudly if a file could not be fetched
+        if: steps.dl.outputs.failed != '0'
+        run: exit 1
