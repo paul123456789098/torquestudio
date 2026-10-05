@@ -6,9 +6,8 @@
 <title>Page not found · Torque Studio</title>
 <meta name="robots" content="noindex, follow">
 <meta name="description" content="This page does not exist. Torque Studio, senior design on subscription.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1180 1080'>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1180 1080'><rect width='1180' height='1080' rx='200' fill='%230a0705'/><path fill='none' stroke='%23dcb878' stroke-width='110' stroke-linejoin='miter' d='M150 40H1140L1111.4 300H791.4L710 1040H400L481.4 300H121.4Z' transform='translate(590 540) scale(.7) translate(-645 -540)'/></svg>" />
 <link rel="stylesheet" href="/fonts/fonts.css">
-<script type="importmap">{"imports":{"three":"./vendor/three.module.min.js","three/addons/":"./vendor/addons/"}}</script>
 <style>
 :root{--bg:#070504;--text:#fff;--muted:#bcb6ad;--faint:#928b81;--line:rgba(255,255,255,.14);--line-2:rgba(255,255,255,.32);--m5:#d57a2a;
   --serif:"Space Grotesk","Inter",system-ui,sans-serif;--sans:"Inter",system-ui,-apple-system,sans-serif;--e:cubic-bezier(.16,.84,.3,1)}
@@ -123,78 +122,6 @@ body.grabbing,body.grabbing *{-webkit-user-select:none!important;user-select:non
     gl.uniform2f(uR,cv.width,cv.height);gl.uniform1f(uT,tt);gl.uniform2f(uM,muX,muY);gl.drawArrays(gl.TRIANGLES,0,3);})(t0);
 })();
 </script>
-<script type="module">
-import * as THREE from 'three';
-import { toCreasedNormals } from 'three/addons/utils/BufferGeometryUtils.js';
-(function(){
- var canvas=document.getElementById('g3d'), stage=document.querySelector('.stage'); if(!canvas||!stage) return;
- var renderer; try{ renderer=new THREE.WebGLRenderer({canvas:canvas,antialias:true,alpha:true}); }catch(e){ return; }
- renderer.setPixelRatio(Math.min(innerWidth<=880?1.25:1.5,window.devicePixelRatio||1));
- renderer.toneMapping=THREE.ACESFilmicToneMapping; renderer.toneMappingExposure=1.05; renderer.setClearColor(0x000000,0);
- var scene=new THREE.Scene();
- var cam=new THREE.PerspectiveCamera(30,1,0.1,100); cam.position.z=7.3;
- var pmrem=new THREE.PMREMGenerator(renderer);
- /* the same studio as the hero letter: dark warm room with long bright softboxes */
- (function(){ var ec=document.createElement('canvas'); ec.width=1024;ec.height=512; var x=ec.getContext('2d');
-   var g0=x.createLinearGradient(0,0,0,512); g0.addColorStop(0,'#e2c89c'); g0.addColorStop(0.25,'#8a6e48'); g0.addColorStop(0.5,'#4a3420'); g0.addColorStop(0.75,'#5a3c22'); g0.addColorStop(1,'#1a100a'); x.fillStyle=g0; x.fillRect(0,0,1024,512);
-   function box(cx,cy,w,h,col){ var r=x.createRadialGradient(cx,cy,2,cx,cy,Math.max(w,h)); r.addColorStop(0,col); r.addColorStop(0.6,col); r.addColorStop(1,'rgba(0,0,0,0)'); x.fillStyle=r; x.save(); x.translate(cx,cy); x.scale(w/Math.max(w,h),h/Math.max(w,h)); x.beginPath(); x.arc(0,0,Math.max(w,h),0,6.3); x.fill(); x.restore(); }
-   box(520,100,460,30,'rgba(255,243,220,1)'); box(360,215,360,18,'rgba(255,234,204,0.95)'); box(90,200,40,200,'rgba(255,238,210,1)'); box(900,300,70,130,'rgba(255,244,222,0.9)');
-   box(520,330,420,22,'rgba(255,200,130,0.8)'); box(300,400,300,18,'rgba(255,180,100,0.6)'); box(760,440,260,20,'rgba(255,170,90,0.5)');
-   var et=new THREE.CanvasTexture(ec); et.mapping=THREE.EquirectangularReflectionMapping; et.colorSpace=THREE.SRGBColorSpace; scene.environment=pmrem.fromEquirectangular(et).texture; })();
- scene.add(new THREE.AmbientLight(0xffffff,0.15));
- var dA=new THREE.DirectionalLight(0xfff2df,2.1); dA.position.set(2,4,6); scene.add(dA);
- var dB=new THREE.DirectionalLight(0xffd6ac,0.85); dB.position.set(-5,-1,2); scene.add(dB);
- /* ---------- the digits: the hero letter's alphabet (heavy italic sans, same box, same stroke, same slant) ---------- */
- var kIt=0.11;
- function sl(q){ return new THREE.Vector2(q[0]+kIt*(1040-q[1]), q[1]); }
- /* 4: left arm, crossbar, full-height stem. 0: a ring with the same 310 / 260 strokes as the T */
- var FOUR=[[40,40],[350,40],[350,560],[720,560],[720,40],[1030,40],[1030,1040],[720,1040],[720,820],[40,820]];
- var ZERO_O=[[40,40],[1030,40],[1030,1040],[40,1040]], ZERO_I=[[350,300],[720,300],[720,780],[350,780]];
- function shape(outer,hole){ var s=new THREE.Shape(outer.map(sl)); if(hole){ s.holes.push(new THREE.Path(hole.map(sl))); } return s; }
- var S=2.35/1100;   /* one scale for all three, so height and stroke match across the digits */
- function build(sh){
-   var g=new THREE.ExtrudeGeometry(sh,{depth:250,bevelEnabled:true,bevelThickness:22,bevelSize:16,bevelSegments:14,curveSegments:4,steps:1});
-   g.rotateX(Math.PI); g.computeBoundingBox(); var c0=new THREE.Vector3(); g.boundingBox.getCenter(c0); g.translate(-c0.x,-c0.y,-c0.z);
-   g.scale(S,S,S); return toCreasedNormals(g,0.55); }
- var glass=new THREE.MeshPhysicalMaterial({color:0x7a4d1a,metalness:0,roughness:0.03,transparent:true,opacity:0.6,depthWrite:false,ior:1.52,reflectivity:1,clearcoat:1,clearcoatRoughness:0,side:THREE.FrontSide,envMapIntensity:3.0,specularIntensity:1.4});
- var rough=(function(){ var Sz=2048, c=document.createElement('canvas'); c.width=c.height=Sz; var g=c.getContext('2d'); g.fillStyle='#444'; g.fillRect(0,0,Sz,Sz);
-   var i,y,l,xx,v;
-   for(i=0;i<70;i++){ y=Math.random()*Sz; g.fillStyle='rgba('+(Math.random()<0.5?20:110)+','+(Math.random()<0.5?20:110)+','+(Math.random()<0.5?20:110)+',0.06)'; g.fillRect(0,y,Sz,8+Math.random()*40); }
-   for(i=0;i<7000;i++){ y=Math.random()*Sz; l=200+Math.random()*1600; xx=Math.random()*Sz; v=24+Math.random()*80|0; g.strokeStyle='rgba('+v+','+v+','+v+','+(0.35+Math.random()*0.65).toFixed(2)+')'; g.lineWidth=0.4+Math.random()*1.3; g.beginPath(); g.moveTo(xx-l,y); g.lineTo(xx+l,y); g.stroke(); }
-   var t=new THREE.CanvasTexture(c); t.wrapS=t.wrapT=THREE.RepeatWrapping; t.repeat.set(1/1400,1/1400); t.offset.set(0.2,0.2); t.anisotropy=renderer.capabilities.getMaxAnisotropy(); return t; })();
- var chrome=new THREE.MeshPhysicalMaterial({color:0xf0d6a4,metalness:1,roughness:0.9,roughnessMap:rough,bumpMap:rough,bumpScale:0.01,anisotropy:0.85,side:THREE.DoubleSide,envMapIntensity:2.4});
- var group=new THREE.Group(); scene.add(group);
- var gFour=build(shape(FOUR)), gZero=build(shape(ZERO_O,ZERO_I));
- var GAP=0.42, W=2.35, X=[-(W+GAP),0,W+GAP], parts=[];
- [gFour,gZero,gFour].forEach(function(g,i){ var p=new THREE.Group(); p.position.x=X[i]; p.add(new THREE.Mesh(g,[glass,chrome])); group.add(p); parts.push(p); });
- group.rotation.set(0.14,-0.22,0);   /* the same resting angle as the hero letter, for the whole word */
- var hint=document.getElementById('hint');
- var drag=false,lx=0,ly=0,vx=0,vy=0,idle=0;
- function pget(e){ return e.touches&&e.touches[0]?e.touches[0]:e; }
- function down(e){ drag=true; idle=0; var p=pget(e); lx=p.clientX; ly=p.clientY; stage.classList.add('grabbing'); if(hint) hint.classList.add('gone');
-   if(e.cancelable && e.type!=='touchstart') e.preventDefault(); document.body.classList.add('grabbing'); }
- function move(e){ if(!drag)return; var p=pget(e); var dx=p.clientX-lx, dy=p.clientY-ly; lx=p.clientX; ly=p.clientY; group.rotation.y+=dx*0.01; group.rotation.x+=dy*0.01; vx=dx*0.01; vy=dy*0.01; }
- function up(){ if(drag){ drag=false; document.body.classList.remove('grabbing'); } stage.classList.remove('grabbing'); }
- stage.addEventListener('pointerdown',down); stage.addEventListener('mousedown',function(e){ e.preventDefault(); });
- window.addEventListener('pointermove',move,{passive:true}); window.addEventListener('pointerup',up); window.addEventListener('pointercancel',up);
- stage.addEventListener('touchstart',down,{passive:true}); window.addEventListener('touchmove',move,{passive:true}); window.addEventListener('touchend',up);
- /* window-sized layer: the camera distance makes the word about 60% of the page width (80% on phones),
-    and the word is placed where the stage element sits, so it scrolls with the page */
- var T=Math.tan(cam.fov*Math.PI/360), WORD=W*3+GAP*2;
- function size(){ var w=Math.max(2,innerWidth), h=Math.max(2,innerHeight); renderer.setSize(w,h,false); cam.aspect=w/h;
-   var sr=stage.getBoundingClientRect(), frac=innerWidth<=880?0.8:0.6, px=Math.max(120,sr.width*frac);
-   var visW=WORD*w/px; cam.position.z=Math.max(4.5, visW/(2*T*cam.aspect)); cam.updateProjectionMatrix(); place(); }
- function place(){ var sr=stage.getBoundingClientRect(); var cx=sr.left+sr.width/2, cy=sr.top+sr.height/2, z=cam.position.z;
-   group.position.x=((cx/innerWidth)*2-1)*z*T*cam.aspect; group.position.y=(1-(cy/innerHeight)*2)*z*T; }
- size(); window.addEventListener('resize',size); window.addEventListener('scroll',place,{passive:true});
- var rm=matchMedia('(prefers-reduced-motion: reduce)').matches, _hf=0;
- function loop(){ requestAnimationFrame(loop); if(document.hidden) return;
-  if(innerWidth<=880 && !drag && ((_hf=(_hf+1)&1))) return;
-  if(!drag && !rm){ vx*=0.95; vy*=0.95; group.rotation.y+=vx; group.rotation.x+=vy; idle+=0.016;
-    group.rotation.y+=Math.sin(idle*0.5)*0.0018; group.rotation.x+=Math.cos(idle*0.42)*0.0011; }
-  renderer.render(scene,cam); }
- loop();
-})();
-</script>
+<script type="module" src="/404.js?v=275ecc3e"></script>
 </body>
 </html>

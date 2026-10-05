@@ -3,7 +3,7 @@
 <title>Tessera — Distributed Object Storage</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="Tessera - distributed object storage. Every object is split into 64 encrypted shards across three continents; any 40 rebuild it. 9 ms median read, no egress fees.">
+<meta name="description" content="Tessera, distributed object storage. Every object is split into 64 encrypted shards across three continents; any 40 rebuild it. 9 ms reads, no egress fees.">
 <link rel="canonical" href="https://tessera.example/">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
 <meta property="og:type" content="website">
@@ -1068,7 +1068,7 @@ body.flat .nums{border-radius:34px}
     <div class="ld-mark" id="ldMark"></div>
     <div class="ld-sub">Distributed object storage</div>
     <div class="ld-bar"><i id="ldBar"></i></div>
-    <div class="ld-pct"><span id="ldPct">0</span>% — allocating shards</div>
+    <div class="ld-pct"><span id="ldPct">0</span>% · allocating shards</div>
   </div>
 </div>
 
@@ -1111,7 +1111,7 @@ body.flat .nums{border-radius:34px}
     <div class="hero-grid">
       <div class="hero-copy">
         <h1 class="h1 rv d1">Every byte,<br>exactly <em>where</em><br>it belongs.</h1>
-        <p class="hero-sub lead rv d2">Every object is split into 64 encrypted shards and spread across three continents. Any 40 of them rebuild it. Lose a rack, a data centre, an entire power grid — your reads never notice.</p>
+        <p class="hero-sub lead rv d2">Every object is split into 64 encrypted shards and spread across three continents. Any 40 of them rebuild it. Lose a rack, a data centre, an entire power grid: your reads never notice.</p>
         <div class="hero-cta rv d3">
           <a class="btn pri" href="#pricing" data-cur="start">Start with 10 TB free <span class="arw">&#8594;</span></a>
           <a class="btn gho" href="#architecture" data-cur="read">Read the architecture</a>
@@ -1154,7 +1154,7 @@ body.flat .nums{border-radius:34px}
     <div class="beats" id="beats">
       <div class="beat" data-at="0.05"><h3>This is one file.</h3><p>A 4 GB archive arrived over a single connection. Reed&ndash;Solomon coding turned it into the sixty-four fragments you are flying through.</p></div>
       <div class="beat" data-at="0.33"><h3>None of them means anything.</h3><p>Every fragment is ciphertext with its own checksum. On its own it reconstructs nothing, so a stolen one is worth nothing.</p></div>
-      <div class="beat" data-at="0.60"><h3>No two share a rack.</h3><p>Placement is decided by correlated-failure score &mdash; power grid, network transit, jurisdiction, hardware batch &mdash; not by geography.</p></div>
+      <div class="beat" data-at="0.60"><h3>No two share a rack.</h3><p>Placement is decided by correlated-failure score (power grid, network transit, jurisdiction, hardware batch), not by geography.</p></div>
       <div class="beat" data-at="0.88"><h3>Any <b>40</b> rebuild the whole.</h3><p>Twenty-four of them can burn at the same moment. The read path never notices, and neither do you.</p></div>
     </div>
     <div class="lat-hud">
@@ -1168,7 +1168,7 @@ body.flat .nums{border-radius:34px}
       <div class="face-in cap-face" data-nofit="1">
         <div class="cap-reel" id="capReel">
           <h2 class="rv cap-head">Built for data that outlives its authors.</h2>
-          <div class="cap-row"><article class="card glass"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#c9b8ff" stroke-width="1.4"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 12l9 4 9-4"/><path d="M3 17l9 4 9-4"/></svg></div><span class="num">01</span><span class="tag">64 / 40</span><div class="sep"></div><h3>Erasure coding, not copies</h3><p>Three copies waste three times the disk and still die with the second failure. Tessera survives twenty-four failures on 1.6&times; the storage &mdash; so you buy durability once, not three times.</p></article><article class="card glass"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#c9b8ff" stroke-width="1.4"><path d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5"/></svg></div><span class="num">02</span><span class="tag">$0.00</span><div class="sep"></div><h3>Egress that costs nothing</h3><p>Read your own data as often as you like. No transfer meter, no surprise line on the invoice &mdash; so nobody on your team has to think twice before running the query.</p></article><article class="card glass"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#ffc490" stroke-width="1.4"><rect x="3" y="11" width="18" height="10" rx="3"/><path d="M8 11V7a4 4 0 018 0v4"/></svg></div><span class="num">03</span><span class="tag">AES-256</span><div class="sep"></div><h3>Encrypted before it leaves</h3><p>Keys never touch our plane. Shards are ciphertext before the first packet leaves your firewall &mdash; a breach on our side hands the attacker noise.</p></article><article class="card glass"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#c9b8ff" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><span class="num">04</span><span class="tag">9 ms</span><div class="sep"></div><h3>No cold tier tax</h3><p>Archived and hot data sit on the same path. A ten-year-old object answers as fast as one written this morning &mdash; no restore jobs, no waiting twelve hours to read your own archive.</p></article><article class="card glass"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#ffc490" stroke-width="1.4"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div><span class="num">05</span><span class="tag">S3</span><div class="sep"></div><h3>The API you already wrote</h3><p>Point your existing SDK at a new endpoint and change one line. Multipart, presigned URLs, versioning and lifecycle rules behave exactly as before &mdash; migrations take an afternoon, not a quarter.</p></article><article class="card glass"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#c9b8ff" stroke-width="1.4"><path d="M12 3l8 4v6c0 4.5-3.4 7.4-8 8-4.6-.6-8-3.5-8-8V7l8-4z"/><path d="M9 12l2 2 4-4"/></svg></div><span class="num">06</span><span class="tag">WORM</span><div class="sep"></div><h3>Immutability with a receipt</h3><p>Object lock, legal hold and a Merkle audit trail your auditor verifies on their own machine &mdash; without a call, an NDA or a single word of trust in us.</p></article></div>
+          <div class="cap-row"><article class="card glass"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#c9b8ff" stroke-width="1.4"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 12l9 4 9-4"/><path d="M3 17l9 4 9-4"/></svg></div><span class="num">01</span><span class="tag">64 / 40</span><div class="sep"></div><h3>Erasure coding, not copies</h3><p>Three copies waste three times the disk and still die with the second failure. Tessera survives twenty-four failures on 1.6&times; the storage, so you buy durability once, not three times.</p></article><article class="card glass"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#c9b8ff" stroke-width="1.4"><path d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5"/></svg></div><span class="num">02</span><span class="tag">$0.00</span><div class="sep"></div><h3>Egress that costs nothing</h3><p>Read your own data as often as you like. No transfer meter, no surprise line on the invoice, so nobody on your team has to think twice before running the query.</p></article><article class="card glass"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#ffc490" stroke-width="1.4"><rect x="3" y="11" width="18" height="10" rx="3"/><path d="M8 11V7a4 4 0 018 0v4"/></svg></div><span class="num">03</span><span class="tag">AES-256</span><div class="sep"></div><h3>Encrypted before it leaves</h3><p>Keys never touch our plane. Shards are ciphertext before the first packet leaves your firewall: a breach on our side hands the attacker noise.</p></article><article class="card glass"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#c9b8ff" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><span class="num">04</span><span class="tag">9 ms</span><div class="sep"></div><h3>No cold tier tax</h3><p>Archived and hot data sit on the same path. A ten-year-old object answers as fast as one written this morning: no restore jobs, no waiting twelve hours to read your own archive.</p></article><article class="card glass"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#ffc490" stroke-width="1.4"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div><span class="num">05</span><span class="tag">S3</span><div class="sep"></div><h3>The API you already wrote</h3><p>Point your existing SDK at a new endpoint and change one line. Multipart, presigned URLs, versioning and lifecycle rules behave exactly as before; migrations take an afternoon, not a quarter.</p></article><article class="card glass"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#c9b8ff" stroke-width="1.4"><path d="M12 3l8 4v6c0 4.5-3.4 7.4-8 8-4.6-.6-8-3.5-8-8V7l8-4z"/><path d="M9 12l2 2 4-4"/></svg></div><span class="num">06</span><span class="tag">WORM</span><div class="sep"></div><h3>Immutability with a receipt</h3><p>Object lock, legal hold and a Merkle audit trail your auditor verifies on their own machine, without a call, an NDA or a single word of trust in us.</p></article></div>
         </div>
       </div>
     </section>
@@ -1208,7 +1208,7 @@ body.flat .nums{border-radius:34px}
       <div class="globe-hold rv"><canvas id="globe" role="img" aria-label="Globe showing Tessera regions on three continents"></canvas><span class="spin-hint" id="spinHint"><i></i>Drag to spin the world</span></div>
       <div>
         <h2 class="rv d1" style="max-width:15ch">Geography is a failure domain, not a feature.</h2>
-        <p class="lead rv d2" style="margin-top:28px">You pick a durability class and stop thinking about it. The solver picks the continents, the grids and the racks &mdash; and quietly moves shards whenever the risk model changes.</p>
+        <p class="lead rv d2" style="margin-top:28px">You pick a durability class and stop thinking about it. The solver picks the continents, the grids and the racks, and quietly moves shards whenever the risk model changes.</p>
         <div class="reg-list rv d3">
           <div class="rrow"><i></i><b>Amsterdam &middot; eu-west-1</b><span>7 ms</span><em>Primary</em></div>
           <div class="rrow"><i></i><b>Ashburn &middot; us-east-2</b><span>9 ms</span><em>Primary</em></div>
@@ -1225,9 +1225,9 @@ body.flat .nums{border-radius:34px}
       <div class="wrap face-in trust-face">
     <h2 class="rv d1">Auditable by people who do not trust us.</h2>
     <div class="sec-grid">
-      <div class="spanel glass rv d1"><div class="k">01</div><h3>Proof, not promises</h3><p>Every object publishes a Merkle root. Verify a restore against your own copy of the ledger, offline, on a laptop &mdash; our cooperation is not part of the process.</p></div>
-      <div class="spanel glass rv d2"><div class="k">02</div><h3>Keys you hold</h3><p>Bring your own KMS or hold the raw keys. A subpoena served on Tessera hands over ciphertext and placement metadata &mdash; there is nothing else for us to give.</p></div>
-      <div class="spanel glass rv d3"><div class="k">03</div><h3>Exit in a day</h3><p>Full-speed export at zero cost, with a signed manifest. The only honest argument against lock-in is a door that opens &mdash; try it on day one if you like.</p></div>
+      <div class="spanel glass rv d1"><div class="k">01</div><h3>Proof, not promises</h3><p>Every object publishes a Merkle root. Verify a restore against your own copy of the ledger, offline, on a laptop; our cooperation is not part of the process.</p></div>
+      <div class="spanel glass rv d2"><div class="k">02</div><h3>Keys you hold</h3><p>Bring your own KMS or hold the raw keys. A subpoena served on Tessera hands over ciphertext and placement metadata; there is nothing else for us to give.</p></div>
+      <div class="spanel glass rv d3"><div class="k">03</div><h3>Exit in a day</h3><p>Full-speed export at zero cost, with a signed manifest. The only honest argument against lock-in is a door that opens: try it on day one if you like.</p></div>
     </div>
     <div class="marq"><div class="marq-in" id="marq"></div></div>
   </div>
@@ -1265,7 +1265,7 @@ body.flat .nums{border-radius:34px}
         
     <div class="cta-box glass rv">
       <h2>Move one bucket. Watch it stop being your problem.</h2>
-      <p>Migration reads from any S3-compatible source at line rate &mdash; 40 TB over a 10 Gb link before lunch. Point it at one bucket, keep the original until you trust the copy.</p>
+      <p>Migration reads from any S3-compatible source at line rate: 40 TB over a 10 Gb link before lunch. Point it at one bucket, keep the original until you trust the copy.</p>
       <div class="hero-cta">
         <a class="btn pri" href="mailto:hello@tessera.example" data-cur="start">Create an account <span class="arw">&#8594;</span></a>
         <a class="btn gho" href="#architecture" data-cur="read">Read the whitepaper</a>
@@ -1285,7 +1285,7 @@ body.flat .nums{border-radius:34px}
     </div>
     <div class="wordmark" id="wordmark"></div>
     <div class="foot-end">
-      <span>Built in the cold &mdash; Reykjav&iacute;k, Amsterdam, Singapore.</span>
+      <span>Built in the cold: Reykjav&iacute;k, Amsterdam, Singapore.</span>
       <span>Fictional brand, made for a design study &middot; 2026</span>
     </div>
   </div>
