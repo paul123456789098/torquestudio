@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
+<script>/* phones: the toolbar showing/hiding while scrolling fires resize with only the height changed; swallow those so
+   sections are not re-measured mid-scroll (the visible jumps). Width changes and big height changes (rotation, keyboard) pass. */
+(function(){ if(!window.matchMedia||!matchMedia('(pointer:coarse)').matches) return; var w=innerWidth,h=innerHeight;
+ addEventListener('resize',function(e){ var nw=innerWidth,nh=innerHeight; if(nw===w&&Math.abs(nh-h)<160){ e.stopImmediatePropagation(); return; } w=nw; h=nh; },true); })();</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
 <meta name="color-scheme" content="light"/>
 <title>OBSKURA — protective eyewear, six frames, Drop 04</title>
@@ -35,8 +39,6 @@ img{display:block;max-width:100%}
 ::selection{background:#0b0b0b;color:#f2f1ee}
 :focus-visible{outline:1px solid currentColor;outline-offset:3px}
 .u{text-transform:uppercase;letter-spacing:.1em}
-.soft{color:var(--soft)}
-.mono{font-variant-numeric:tabular-nums}
 
 /* film grain over the whole page — it is what stops flat colour reading as a wireframe */
 .grain{position:fixed;inset:0;z-index:400;pointer-events:none;opacity:.5;mix-blend-mode:multiply}
@@ -96,9 +98,7 @@ img{display:block;max-width:100%}
 .opmeta{position:absolute;left:var(--gut);right:var(--gut);top:16px;z-index:4;color:var(--ink);
   display:flex;justify-content:space-between;gap:16px;font-size:10px;letter-spacing:.15em;
   text-transform:uppercase}
-.scrollcue{position:absolute;left:50%;bottom:calc(2.2vw + var(--markh,7.5vw) + 14px);transform:translateX(-50%);z-index:3;
-  color:#fff;font-size:10px;letter-spacing:.2em;text-transform:uppercase;opacity:.85;
-  animation:cue 2.4s var(--ease) infinite}
+
 @keyframes cue{0%,100%{transform:translate(-50%,0);opacity:.5}50%{transform:translate(-50%,7px);opacity:1}}
 
 /* ---------- pinned statement ---------- */
@@ -178,8 +178,7 @@ img{display:block;max-width:100%}
 .seqcap b{display:block;font-weight:500;font-size:clamp(18px,2.4vw,32px);line-height:1.06;
   letter-spacing:-.02em;text-transform:uppercase;margin-bottom:8px}
 .seqcap span{font-size:10px;letter-spacing:.15em;text-transform:uppercase;opacity:.75}
-.seqn{position:absolute;right:var(--gut);bottom:34px;z-index:9;color:#fff;font-size:10px;
-  letter-spacing:.2em;text-transform:uppercase;font-variant-numeric:tabular-nums;opacity:.75}
+
 .seqbar{position:absolute;left:var(--gut);right:var(--gut);bottom:18px;z-index:9;height:1px;
   background:rgba(255,255,255,.2)}
 .seqbar i{display:block;height:100%;background:#fff;width:0}
@@ -436,7 +435,7 @@ body.locked{overflow:hidden}
   #campaign{height:150svh!important}
   .seqcap{bottom:38px;max-width:24ch}
   .seqcap b{font-size:22px}
-  .seqbar{bottom:calc(14px + env(safe-area-inset-bottom))}
+  .seqbar{bottom:calc(58px + env(safe-area-inset-bottom))}
 
   .foot a{padding:9px 0}
 
@@ -1828,6 +1827,12 @@ addEventListener('keydown',function(e){
   tick();setInterval(tick,1000);
 })();
 
+/* ---------- checkout: a concept store, so the button says so instead of doing nothing ---------- */
+(function(){
+  var c=document.querySelector('.checkout');if(!c)return;
+  c.addEventListener('click',function(){c.textContent='Concept store, no checkout';setTimeout(function(){c.textContent='Checkout';},1800);});
+})();
+
 /* ---------- access form ---------- */
 (function(){
   var f=$('#accForm');if(!f)return;
@@ -1914,5 +1919,12 @@ addEventListener('keydown',function(e){
 tickAll();
 })();
 </script>
+<!-- torque-back -->
+<script>(function(){ if(window.top!==window) return;
+ var b=document.createElement('a'); b.href='/#urban-sunglasses'; b.textContent='\u2190 Back'; b.setAttribute('aria-label','Back to Torque Studio'); b.setAttribute('data-torque-back','');
+ b.style.cssText='position:fixed;right:14px;bottom:calc(58px + env(safe-area-inset-bottom));z-index:2147483647;padding:11px 16px;border-radius:100px;background:rgba(14,10,7,.72);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.2);color:#fff;font:500 14px/1 -apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;letter-spacing:.01em;text-decoration:none;box-shadow:0 10px 30px -10px rgba(0,0,0,.7);-webkit-tap-highlight-color:transparent';
+ b.addEventListener('click',function(e){ var r=document.referrer; if(r && r.indexOf(location.origin)===0 && history.length>1){ e.preventDefault(); history.back(); } });
+ (document.body||document.documentElement).appendChild(b); })();</script>
+<!-- /torque-back -->
 </body>
 </html>

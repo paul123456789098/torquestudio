@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<script>/* phones: the toolbar showing/hiding while scrolling fires resize with only the height changed; swallow those so
+   sections are not re-measured mid-scroll (the visible jumps). Width changes and big height changes (rotation, keyboard) pass. */
+(function(){ if(!window.matchMedia||!matchMedia('(pointer:coarse)').matches) return; var w=innerWidth,h=innerHeight;
+ addEventListener('resize',function(e){ var nw=innerWidth,nh=innerHeight; if(nw===w&&Math.abs(nh-h)<160){ e.stopImmediatePropagation(); return; } w=nw; h=nh; },true); })();</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Obra Gris — Architecture Studio, Barcelona</title>
 <meta name="description" content="Obra Gris — architecture studio in Barcelona, founded 2014. Structure before finish: buildings drawn in the order they are actually built.">
@@ -155,8 +159,7 @@ body.menu-open .mobile{opacity:1;transform:none;pointer-events:auto;visibility:v
   backdrop-filter:blur(4px) saturate(1.06) brightness(.88);
   background:rgba(226,233,240,.012)}
 .hero-inner{position:relative;z-index:1;width:100%;max-width:var(--maxw);margin:0 auto}
-.eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;color:var(--acc);display:flex;align-items:center;gap:12px;margin-bottom:24px}
-.eyebrow::before{content:'';width:38px;height:1px;background:var(--acc)}
+
 .hero h1{font-size:clamp(2.9rem,10.5vw,9.4rem);font-weight:800;line-height:.86;letter-spacing:-.055em;text-transform:uppercase}
 .hero h1{text-align:center;position:relative;z-index:1}
 .hero-head{position:relative}
@@ -182,10 +185,6 @@ body:not(.loading) .hero-foot{opacity:1;transform:none}
 .hero-stats span{font-family:var(--mono);display:block;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--faint);line-height:1.45}
 @media(max-width:860px){
   .hero-stats div{display:flex;flex-direction:column;justify-content:flex-start;align-items:center}
-}
-@media(max-width:600px){
-  .eyebrow{font-size:.6rem;letter-spacing:.2em;gap:9px}
-  .eyebrow::before{width:24px;flex:none}
 }
 
 /* ---------- the scroll world ---------- */
@@ -332,8 +331,6 @@ footer{max-width:calc(var(--maxw) + 2*clamp(16px,3vw,44px));margin:0 auto;paddin
 .tb .tb-l b{color:var(--ink);font-family:var(--display);font-weight:800;font-size:1rem;letter-spacing:-.03em;text-transform:none}
 @media(max-width:960px){.tb{grid-template-columns:1fr 1fr}.tb>div{border-bottom:1px solid var(--line)}
   .tb>div:nth-child(2n){border-right:0}.tb .tb-r{grid-column:1/-1;border-bottom:0}}
-
-
 
 @media(max-width:1180px){.nav-cta{display:none}}
 @media(max-width:1080px){.nav-mid{display:none}.burger{display:flex}.mobile{display:flex}}
@@ -1682,5 +1679,12 @@ document.querySelectorAll('.sheet,.card').forEach(function(el){
 
 })();
 </script>
+<!-- torque-back -->
+<script>(function(){ if(window.top!==window) return;
+ var b=document.createElement('a'); b.href='/#architecture-firm'; b.textContent='\u2190 Back'; b.setAttribute('aria-label','Back to Torque Studio'); b.setAttribute('data-torque-back','');
+ b.style.cssText='position:fixed;right:14px;bottom:calc(58px + env(safe-area-inset-bottom));z-index:2147483647;padding:11px 16px;border-radius:100px;background:rgba(14,10,7,.72);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.2);color:#fff;font:500 14px/1 -apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;letter-spacing:.01em;text-decoration:none;box-shadow:0 10px 30px -10px rgba(0,0,0,.7);-webkit-tap-highlight-color:transparent';
+ b.addEventListener('click',function(e){ var r=document.referrer; if(r && r.indexOf(location.origin)===0 && history.length>1){ e.preventDefault(); history.back(); } });
+ (document.body||document.documentElement).appendChild(b); })();</script>
+<!-- /torque-back -->
 </body>
 </html>

@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<script>/* phones: the toolbar showing/hiding while scrolling fires resize with only the height changed; swallow those so
+   sections are not re-measured mid-scroll (the visible jumps). Width changes and big height changes (rotation, keyboard) pass. */
+(function(){ if(!window.matchMedia||!matchMedia('(pointer:coarse)').matches) return; var w=innerWidth,h=innerHeight;
+ addEventListener('resize',function(e){ var nw=innerWidth,nh=innerHeight; if(nw===w&&Math.abs(nh-h)<160){ e.stopImmediatePropagation(); return; } w=nw; h=nh; },true); })();</script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Umbra Strata 01</title>
 <meta name="description" content="Umbra Strata 01 — a carbon-plate road racing shoe. 39 mm heel stack, 8 mm drop, 168 g half pair. €289, 12 March.">
@@ -327,7 +331,7 @@ html.js #tDraw{stroke-dasharray:4000;stroke-dashoffset:4000}
 .work{flex:1 1 auto;min-height:0;display:flex;flex-direction:column;
   justify-content:flex-end;padding:1.6rem 0;gap:1.4rem}
 .work.mid{justify-content:center}
-.work.spread{justify-content:space-between}
+
 /* one constant base band, so the deck's only persistent rule stops jumping
    82 px between scenes */
 .base{flex:0 0 auto;border-top:1px solid var(--line);padding-top:.9rem;min-height:2.9rem;
@@ -1171,5 +1175,12 @@ html.js .card{flex:0 0 min(40vw,38rem);min-height:0}
   if(document.fonts&&document.fonts.ready) document.fonts.ready.then(sync);
 })();
 </script>
+<!-- torque-back -->
+<script>(function(){ if(window.top!==window) return;
+ var b=document.createElement('a'); b.href='/#running-shoes'; b.textContent='\u2190 Back'; b.setAttribute('aria-label','Back to Torque Studio'); b.setAttribute('data-torque-back','');
+ b.style.cssText='position:fixed;right:14px;bottom:calc(58px + env(safe-area-inset-bottom));z-index:2147483647;padding:11px 16px;border-radius:100px;background:rgba(14,10,7,.72);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.2);color:#fff;font:500 14px/1 -apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;letter-spacing:.01em;text-decoration:none;box-shadow:0 10px 30px -10px rgba(0,0,0,.7);-webkit-tap-highlight-color:transparent';
+ b.addEventListener('click',function(e){ var r=document.referrer; if(r && r.indexOf(location.origin)===0 && history.length>1){ e.preventDefault(); history.back(); } });
+ (document.body||document.documentElement).appendChild(b); })();</script>
+<!-- /torque-back -->
 </body>
 </html>
