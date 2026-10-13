@@ -24,6 +24,6 @@ Client work is under NDA. These five are concept brands that show how the studio
 ## Contact
 
 - Email: hello@torquestudio.es
-- LinkedIn: https://www.linkedin.com/in/ai-driven-design/
+- LinkedIn: https://www.linkedin.com/company/torque-design-studio
 - Website: https://torquestudio.es/
 - Full version: https://torquestudio.es/llms-full.txt
