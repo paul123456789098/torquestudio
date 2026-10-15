@@ -1178,9 +1178,16 @@ html.js .card{flex:0 0 min(40vw,38rem);min-height:0}
 <!-- torque-back -->
 <script>(function(){ if(window.top!==window) return;
  var b=document.createElement('a'); b.href='/#running-shoes'; b.textContent='\u2190 Back'; b.setAttribute('aria-label','Back to Torque Studio'); b.setAttribute('data-torque-back','');
- b.style.cssText='position:fixed;right:14px;bottom:calc(58px + env(safe-area-inset-bottom));z-index:2147483647;padding:11px 16px;border-radius:100px;background:rgba(14,10,7,.72);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.2);color:#fff;font:500 14px/1 -apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;letter-spacing:.01em;text-decoration:none;box-shadow:0 10px 30px -10px rgba(0,0,0,.7);-webkit-tap-highlight-color:transparent';
+ b.style.cssText='position:fixed;right:14px;bottom:calc(58px + env(safe-area-inset-bottom));z-index:2147483647;min-height:44px;box-sizing:border-box;display:inline-flex;align-items:center;padding:0 18px;border-radius:100px;background:rgba(14,10,7,.72);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.2);color:#fff;font:500 14px/1 -apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;letter-spacing:.01em;text-decoration:none;box-shadow:0 10px 30px -10px rgba(0,0,0,.7);-webkit-tap-highlight-color:transparent;transition:transform .35s cubic-bezier(.16,.84,.3,1),opacity .25s ease;will-change:transform';
  b.addEventListener('click',function(e){ var r=document.referrer; if(r && r.indexOf(location.origin)===0 && history.length>1){ e.preventDefault(); history.back(); } });
- (document.body||document.documentElement).appendChild(b); })();</script>
+ (document.body||document.documentElement).appendChild(b);
+ /* out of the way while reading (scrolling down), back as soon as you scroll up, and always at the very top and the end */
+ var last=scrollY, shown=true, raf=0;
+ function show(v){ if(v===shown) return; shown=v; b.style.transform=v?'':'translateY(calc(100% + 90px))'; b.style.opacity=v?'':'0'; b.style.pointerEvents=v?'':'none'; }
+ function upd(){ raf=0; var y=scrollY, d=y-last, end=document.documentElement.scrollHeight-innerHeight-y;
+   if(y<120||end<240) show(true); else if(d>6) show(false); else if(d<-6) show(true);
+   if(Math.abs(d)>6) last=y; }
+ addEventListener('scroll',function(){ if(!raf) raf=requestAnimationFrame(upd); },{passive:true}); })();</script>
 <!-- /torque-back -->
 </body>
 </html>

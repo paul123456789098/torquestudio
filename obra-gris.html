@@ -95,7 +95,7 @@ canvas{display:block}
   font-family:var(--mono);font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
 .ld-meta b{font-weight:500;color:#e8edf1}
 .ld-bar{margin:14px auto 0;width:100%;height:1px;background:rgba(255,255,255,.14);position:relative;overflow:hidden}
-.ld-bar i{position:absolute;inset:0 100% 0 0;background:var(--acc);transition:right .2s linear}
+.ld-bar i{position:absolute;inset:0;background:var(--acc);transform:scaleX(0);transform-origin:0 50%;transition:transform .2s linear}
 
 /* ---------- курсор: карандаш, остриё — точка нажатия ---------- */
 @media(hover:hover) and (pointer:fine){
@@ -792,6 +792,7 @@ function buildSheet(svg){
   return function(e){
     for(var q=0;q<items.length;q++){ var it=items[q];
       var u=(e-it.a)/(it.b-it.a); u=u<0?0:(u>1?1:u);
+      if(it.u===u) continue; it.u=u;   /* untouched strokes are not rewritten every frame */
       if(it.f) it.n.style.opacity=u; else it.n.style.strokeDashoffset=it.len*(1-u);
     }
   };
@@ -808,14 +809,14 @@ function buildSheet(svg){
   var draw=buildSheet(document.getElementById('ldsvg'));
   var stageEl=document.getElementById('ldstage');
   var STAGES=[[0,'Grid'],[.30,'Columns'],[.52,'Walls'],[.76,'Openings'],[.86,'Dimensions']], lastStage='';
-  var MIN=900, CAP=2000, DRAW=1600, t0=performance.now(), shown=0;
+  var MIN=900, CAP=2000, DRAW=1600, t0=performance.now(), shown=0, shownPct=-1;
   (function step(now){
     var t=now-t0;
     var real=(window.FILM&&FILM.count)?Math.min(1,(FILM.good||0)/12):0;
     var target=Math.max(Math.min(1,t/CAP), real, t>=MIN?real:0);
     shown+=(target-shown)*0.18;
     var e=Math.min(Math.max(shown, Math.min(1,t/CAP)), t/DRAW);
-    pct.textContent=Math.round(e*100); bar.style.right=(100-e*100)+'%';
+    var pv=Math.round(e*100); if(pv!==shownPct){ shownPct=pv; pct.textContent=pv; } bar.style.transform='scaleX('+e.toFixed(4)+')';
     draw(e);
     var nm=STAGES[0][1]; for(var i=0;i<STAGES.length;i++){ if(e>=STAGES[i][0]) nm=STAGES[i][1]; }
     if(nm!==lastStage){ lastStage=nm; stageEl.textContent=nm; }
@@ -1388,9 +1389,16 @@ FILM.wanted=function(i){ return FILM.step===1 || i%FILM.step===0 || i===FILM.cou
       }
     }
   };
+  /* phones: the first 16 frames (the opening) load first and alone; the other ~100 (≈3.5 MB) follow once those are in and the page
+     has had a moment to settle, or right away at the first scroll/touch. The first screen isn't fighting a flood of downloads,
+     and the film is still preloaded long before anyone reaches it */
+  var engaged=!FILM_MOB;
+  if(!engaged){ var go=function(){ if(engaged) return; engaged=true; removeEventListener('scroll',go); removeEventListener('touchstart',go); pump(); };
+    addEventListener('scroll',go,{passive:true}); addEventListener('touchstart',go,{passive:true});
+    (function wait(){ if(engaged) return; if((FILM.good||0)>=8){ setTimeout(go,1500); return; } setTimeout(wait,300); })(); }
   function pump(){
     if(FILM.stopped) return;
-    while(inFlight<MAX && queue.length){
+    while(inFlight<MAX && queue.length && (engaged || queue[0]<16)){
       (function(i){ inFlight++;
         var im=new Image(); im.decoding='async';
         function ready(){ FILM.imgs[i]=im; FILM.loaded++; inFlight--;
@@ -1682,9 +1690,16 @@ document.querySelectorAll('.sheet,.card').forEach(function(el){
 <!-- torque-back -->
 <script>(function(){ if(window.top!==window) return;
  var b=document.createElement('a'); b.href='/#architecture-firm'; b.textContent='\u2190 Back'; b.setAttribute('aria-label','Back to Torque Studio'); b.setAttribute('data-torque-back','');
- b.style.cssText='position:fixed;right:14px;bottom:calc(58px + env(safe-area-inset-bottom));z-index:2147483647;padding:11px 16px;border-radius:100px;background:rgba(14,10,7,.72);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.2);color:#fff;font:500 14px/1 -apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;letter-spacing:.01em;text-decoration:none;box-shadow:0 10px 30px -10px rgba(0,0,0,.7);-webkit-tap-highlight-color:transparent';
+ b.style.cssText='position:fixed;right:14px;bottom:calc(58px + env(safe-area-inset-bottom));z-index:2147483647;min-height:44px;box-sizing:border-box;display:inline-flex;align-items:center;padding:0 18px;border-radius:100px;background:rgba(14,10,7,.72);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.2);color:#fff;font:500 14px/1 -apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;letter-spacing:.01em;text-decoration:none;box-shadow:0 10px 30px -10px rgba(0,0,0,.7);-webkit-tap-highlight-color:transparent;transition:transform .35s cubic-bezier(.16,.84,.3,1),opacity .25s ease;will-change:transform';
  b.addEventListener('click',function(e){ var r=document.referrer; if(r && r.indexOf(location.origin)===0 && history.length>1){ e.preventDefault(); history.back(); } });
- (document.body||document.documentElement).appendChild(b); })();</script>
+ (document.body||document.documentElement).appendChild(b);
+ /* out of the way while reading (scrolling down), back as soon as you scroll up, and always at the very top and the end */
+ var last=scrollY, shown=true, raf=0;
+ function show(v){ if(v===shown) return; shown=v; b.style.transform=v?'':'translateY(calc(100% + 90px))'; b.style.opacity=v?'':'0'; b.style.pointerEvents=v?'':'none'; }
+ function upd(){ raf=0; var y=scrollY, d=y-last, end=document.documentElement.scrollHeight-innerHeight-y;
+   if(y<120||end<240) show(true); else if(d>6) show(false); else if(d<-6) show(true);
+   if(Math.abs(d)>6) last=y; }
+ addEventListener('scroll',function(){ if(!raf) raf=requestAnimationFrame(upd); },{passive:true}); })();</script>
 <!-- /torque-back -->
 </body>
 </html>

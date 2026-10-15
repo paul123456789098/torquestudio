@@ -1249,7 +1249,7 @@ html.fm nav,html.fm #load{right:auto;width:var(--fmw)}
         <div class="figw figw-roots">
           <div class="roots-fig eng eng-base" id="rootsFig" style="--eng:url(pmedia/7b05794e9d5d.webp)"></div>
           <canvas class="fig-cv" data-fig="roots" data-ink="#7A3517" aria-hidden="true"></canvas>
-          <img class="fig-src" src="pmedia/ed33db99d0b1.webp" alt="" aria-hidden="true" decoding="async">
+          <img class="fig-src" loading="lazy" decoding="async" src="pmedia/ed33db99d0b1.webp" alt="" aria-hidden="true" decoding="async">
         </div>
         <div class="nd-col rgt">
           <div class="nd" data-at=".34"><span class="k">02</span><b>Nine grams of fibre</b><span>Per 355 ml, near a third of what most people manage in a day.</span></div>
@@ -1266,7 +1266,7 @@ html.fm nav,html.fm #load{right:auto;width:var(--fmw)}
         <div class="figw figw-crocks">
           <div class="cellar-fig eng eng-base" id="cellarFig" style="--eng:url(pmedia/1d3cf1d53f63.webp)"></div>
           <canvas class="fig-cv" data-fig="crocks" data-ink="#EBDCBE" aria-hidden="true"></canvas>
-          <img class="fig-src" src="pmedia/236f660f048f.webp" alt="" aria-hidden="true" decoding="async">
+          <img class="fig-src" loading="lazy" decoding="async" src="pmedia/236f660f048f.webp" alt="" aria-hidden="true" decoding="async">
           <div class="crock-lvl" aria-hidden="true"><div class="crock-fill" id="crockFill"></div></div>
           <canvas class="crock-bub" id="crockBub" aria-hidden="true"></canvas>
         </div>
@@ -1301,7 +1301,7 @@ html.fm nav,html.fm #load{right:auto;width:var(--fmw)}
     <div class="figw figw-aq rv" data-d="1">
       <div class="aq-fig eng eng-base" style="--eng:url(pmedia/48eb54bd7056.webp)" role="img" aria-label="A limestone cavern, drawn in section"></div>
       <canvas class="fig-cv" data-fig="cavern" data-ink="#CBDFE2" aria-hidden="true"></canvas>
-      <img class="fig-src" src="pmedia/87472ace5b14.webp" alt="" aria-hidden="true" decoding="async">
+      <img class="fig-src" loading="lazy" decoding="async" src="pmedia/87472ace5b14.webp" alt="" aria-hidden="true" decoding="async">
     </div>
     <p class="fig-cap rv" data-d="2">Fig.&nbsp;5 &nbsp;·&nbsp; the confined aquifer, in section</p>
     <table class="mtab rv" data-d="2"><thead><tr>
@@ -1696,8 +1696,10 @@ var FL=(function(){
         ctx.beginPath();ctx.arc(o.x+Math.sin(o.w)*6,o.y,o.r,0,6.283);
         ctx.strokeStyle='rgba(203,223,226,'+o.a+')';ctx.lineWidth=.9;ctx.stroke();}}
     requestAnimationFrame(fr);}
-  new IntersectionObserver(function(e){vis=e[0].isIntersecting},{rootMargin:'120px'}).observe(cv);
-  addEventListener('resize',size);size();fr();
+  /* the canvas covers a tall section: sizing it (and starting the loop) waits until it comes near, not at page load */
+  var started=false;
+  new IntersectionObserver(function(e){vis=e[0].isIntersecting; if(vis&&!started){started=true; size(); fr();}},{rootMargin:'400px'}).observe(cv);
+  addEventListener('resize',function(){ if(started) size(); });
 })();
 
 /* ── КРАСКА В ТИСНЕНИИ ──
@@ -2287,9 +2289,16 @@ document.querySelectorAll('a[target]').forEach(function(a){ a.removeAttribute('t
 <!-- torque-back -->
 <script>(function(){ if(window.top!==window) return;
  var b=document.createElement('a'); b.href='/#beverage'; b.textContent='\u2190 Back'; b.setAttribute('aria-label','Back to Torque Studio'); b.setAttribute('data-torque-back','');
- b.style.cssText='position:fixed;right:14px;bottom:calc(58px + env(safe-area-inset-bottom));z-index:2147483647;padding:11px 16px;border-radius:100px;background:rgba(14,10,7,.72);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.2);color:#fff;font:500 14px/1 -apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;letter-spacing:.01em;text-decoration:none;box-shadow:0 10px 30px -10px rgba(0,0,0,.7);-webkit-tap-highlight-color:transparent';
+ b.style.cssText='position:fixed;right:14px;bottom:calc(58px + env(safe-area-inset-bottom));z-index:2147483647;min-height:44px;box-sizing:border-box;display:inline-flex;align-items:center;padding:0 18px;border-radius:100px;background:rgba(14,10,7,.72);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.2);color:#fff;font:500 14px/1 -apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;letter-spacing:.01em;text-decoration:none;box-shadow:0 10px 30px -10px rgba(0,0,0,.7);-webkit-tap-highlight-color:transparent;transition:transform .35s cubic-bezier(.16,.84,.3,1),opacity .25s ease;will-change:transform';
  b.addEventListener('click',function(e){ var r=document.referrer; if(r && r.indexOf(location.origin)===0 && history.length>1){ e.preventDefault(); history.back(); } });
- (document.body||document.documentElement).appendChild(b); })();</script>
+ (document.body||document.documentElement).appendChild(b);
+ /* out of the way while reading (scrolling down), back as soon as you scroll up, and always at the very top and the end */
+ var last=scrollY, shown=true, raf=0;
+ function show(v){ if(v===shown) return; shown=v; b.style.transform=v?'':'translateY(calc(100% + 90px))'; b.style.opacity=v?'':'0'; b.style.pointerEvents=v?'':'none'; }
+ function upd(){ raf=0; var y=scrollY, d=y-last, end=document.documentElement.scrollHeight-innerHeight-y;
+   if(y<120||end<240) show(true); else if(d>6) show(false); else if(d<-6) show(true);
+   if(Math.abs(d)>6) last=y; }
+ addEventListener('scroll',function(){ if(!raf) raf=requestAnimationFrame(upd); },{passive:true}); })();</script>
 <!-- /torque-back -->
 </body>
 </html>
