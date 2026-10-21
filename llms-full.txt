@@ -138,3 +138,177 @@ Anastasiia Odiehova
 ## Blog
 
 - [Design subscription vs in-house designer: what's cheaper in 2026?](https://torquestudio.es/blog/design-subscription-vs-in-house-designer): Should you hire an in-house designer or use a design subscription? Compare real 2026 costs, speed, quality and fit, plus when a subscription is wrong.
+
+## Blog article: Design subscription vs in-house designer: what's cheaper in 2026?
+
+https://torquestudio.es/blog/design-subscription-vs-in-house-designer · 21 Oct 2026 · Pavlo Lobodiuk
+
+Should you hire an in-house designer or use a design subscription? Compare real 2026 costs, speed, quality and fit, plus when a subscription is wrong.
+
+Hire an in-house designer if you need one person fully embedded in your company, covering branding, print, product UX and daily ad-hoc work. Use a design subscription if you need a steady flow of senior marketing design, such as landing pages, pitch decks, ad banners and social visuals, without the fixed cost, recruiting time and management load of a hire. In 2026 the true cost of an in-house designer is well above the salary once taxes, recruiting, tools and management time are added. So compare total cost, not salary against a subscription fee.
+
+### Key takeaways
+
+- An in-house designer costs salary plus employer contributions, recruiting, tools, hardware and your own management time. On an illustrative €45,000 salary in Spain, the first year can reach €65,000–€72,000 before tools and hardware.
+
+- A design subscription has a fixed monthly cost, starts in days rather than months, and can be scaled down when demand drops.
+
+- A subscription is the wrong fit if you need branding, print, deep product UX, or someone physically in the office every day.
+
+- Freelancers can be cheaper per task but carry availability and consistency risk, especially for recurring campaign work.
+
+- Decide by mapping your last 3 months of design requests, not by comparing salaries.
+
+### What does an in-house designer really cost in 2026?
+
+An in-house designer costs significantly more than the gross salary, because employer contributions, recruiting, tools and management time are added on top. Here is a worked example using an illustrative salary for a senior designer in Spain.
+
+Cost item | Illustrative figure | Notes |
+
+Gross annual salary | €45,000 | A conservative example: senior UX/UI designers in Spain typically earn €45,000–€62,000, and the Barcelona average for senior product designers is about €55,000 |
+
+Employer social security (Spain) | ~€13,800 (30.65%) | 2026 employer rates on a permanent contract: common contingencies 23.60%, unemployment 5.50%, MEI 0.75%, training 0.60%, FOGASA 0.20%. Workplace accident insurance comes on top and depends on the activity |
+
+Recruiting fee (if using an agency) | €6,750–€13,500 one-time | Agency fees are typically 15–30% of first-year salary |
+
+Software (Figma, Adobe, AI tools) | ~€1,500–€1,700 a year | Adobe Creative Cloud Pro €79.30 a month in Spain, Figma Professional about $16–20 per seat a month, Midjourney Standard $30 a month, Runway Standard $12–15 a month |
+
+Hardware | From ~€2,200 one-time | MacBook Pro 14" from €1,829 in Spain, plus a display and peripherals |
+
+First-year total, before tools and hardware | ~€65,500–€72,300 | Salary, social security and recruiting fee from the rows above |
+
+Three costs rarely appear in a budget but show up in practice:
+
+- Time to hire. Writing the role, screening portfolios and interviews typically take 6–7 weeks. In Spain the new hire then usually gives 15 days' notice, and some collective agreements require a month for senior roles. That adds up to around two months, and your campaigns don't pause during that time.
+
+- Ramp-up. Plan for several weeks before a new designer knows your brand, tools and approval process well enough to work independently.
+
+- Management time. Someone writes briefs, reviews work, runs 1:1s and plans workload. Even 2–4 hours a week from a marketing director is a real cost.
+
+There is also the capacity problem. You pay for a full-time designer during quiet months, holidays and sick leave. And one person rarely covers everything at a senior level: decks, landing pages, ad banners, motion and AI video are different skills.
+
+### What does a design subscription cost, and what do you get for it?
+
+A design subscription is a fixed monthly fee for an ongoing queue of design requests, usually handled by a senior designer or small team. Market prices vary widely by seniority, scope and location: from about $700 a month for an entry-level team plan to about $5,000 a month for a senior designer working one request at a time, and more for enterprise creative services.
+
+What you typically get:
+
+- A request queue. You submit tasks, the team works through them in priority order.
+
+- Defined revision rounds. Each request includes a set number of revisions.
+
+- Async communication. Usually through Slack or a project tool, within set working hours.
+
+- No hiring overhead. No recruiting fee, no social security, no software seats, no hardware.
+
+- Flexible commitment. Many providers let you scale or stop monthly, and some let you pause. Notice periods and refund rules differ, so check the terms.
+
+What you don't get: a person sitting in your office, unlimited scope, or instant replies outside working hours. Most subscriptions also exclude some work types, so read the scope before you sign.
+
+### How do a design subscription, an in-house designer and freelancers compare?
+
+A design subscription wins on speed to start and cost flexibility, an in-house designer wins on embedding and breadth, and freelancers win on one-off price but lose on reliability.
+
+Factor | Design subscription | In-house designer | Freelancer |
+
+Time to start | Days | Months (hiring plus notice) | Days to weeks |
+
+Cost structure | Fixed monthly fee | Salary plus ~31% contributions, plus tools and hardware | Per project or hourly |
+
+Hidden costs | Low | Recruiting, tools, hardware, management | Re-briefing, chasing, quality variance |
+
+Scaling down | Usually monthly | Difficult, involves employment law | Easy |
+
+Consistency over time | High if built on a design system | High | Varies by person and availability |
+
+Breadth of skills | Defined by scope | Limited to one person's skills | Limited to one person's skills |
+
+Availability | Set working hours | Office hours, minus holidays and sick leave | Unpredictable |
+
+Best for | Recurring marketing and campaign design | Full-time, embedded, broad design role | One-off, well-defined tasks |
+
+### When is hiring an in-house designer the better choice?
+
+Hiring an in-house designer is the better choice when design is a daily, cross-functional job that needs someone inside the company full time. Being honest about this saves you money either way.
+
+Hire in-house if:
+
+- You need product UX and UI work every day, embedded with engineers and product managers.
+
+- You need branding or print, such as packaging, retail materials or a new identity. Many design subscriptions exclude these.
+
+- Your volume is consistently high across many formats, enough to keep a person fully busy all year.
+
+- You need someone in person, for photo shoots, events or in-office workshops.
+
+- Design knowledge is strategic IP you want to build inside the team over years.
+
+If three or more of these apply, a design subscription will likely feel too narrow.
+
+### When is a design subscription the better choice?
+
+A design subscription is the better choice when you need consistent, senior-level marketing design on a recurring basis but not a full-time employee. This is the most common situation for product companies and consumer brands running ongoing campaigns.
+
+Choose a subscription if:
+
+- Your demand comes in waves, such as launch months and quieter months.
+
+- Your work is mostly marketing output: campaign landing pages, sales decks, ad banners, social visuals, AI visuals and video.
+
+- You need to start this month, not next quarter.
+
+- You've been burned by freelancers missing deadlines or delivering uneven quality.
+
+- You don't have a developer free to build landing pages from design files, and your provider can build them.
+
+A practical example: a consumer brand launching a product needs a landing page, a set of ad banners in multiple sizes, social visuals and an investor or retail deck, all in four weeks. Hiring takes longer than the launch window. A subscription can start immediately and then scale down after launch.
+
+### How do you decide between a design subscription and an in-house designer?
+
+The most reliable way to decide is to analyse your actual design demand over the last 3 months, then compare total costs. Follow these steps:
+
+- List every design request from the last 3 months. Include ones that were delayed or never done.
+
+- Sort them by type. Landing pages, decks, ads, social, video, branding, print, product UI.
+
+- Mark which types a subscription covers. If most of your list falls outside the scope, hire.
+
+- Estimate monthly volume. Is it steady or in waves?
+
+- Calculate the full in-house cost using the table above with your local salary data.
+
+- Compare it with 12 months of a subscription, including the option to scale down.
+
+- Factor in time to start. What does a 3-month hiring gap cost in delayed campaigns?
+
+Many teams end up with a hybrid: a design subscription for marketing output, and later an in-house hire once volume and scope justify it.
+
+### How we do it at Torque
+
+Torque Studio is a Barcelona-based design subscription for product companies and consumer brands. Our scope covers campaign landing pages, presentations and pitch decks, marketing and ad banners, social visuals, and AI visuals and video. We don't do branding or print, and full company websites are a separate one-off project. The first week of every subscription is spent building the client's design system, and every later request builds on it. Pavlo Lobodiuk, founder and lead designer, builds landing pages in HTML, so clients don't need a developer. Anastasiia, Head of Operations, owns the queue and deadlines. Each request includes 3 revision rounds, and we work in Slack, 10:00–18:00 CET, Monday to Friday.
+
+### FAQ
+
+**Is a design subscription cheaper than an in-house designer?**
+Often yes, once you count the full cost of a hire, which includes employer contributions, recruiting, tools and management time. In Spain, employer contributions alone add around 30% to the gross salary. Compare 12 months of total cost, not salary against monthly fee.
+
+**What can't a design subscription do?**
+Most design subscriptions have a defined scope and exclude some work types, such as branding, print or deep product UX. They also don't provide someone physically in your office. Check the scope against your real list of requests before signing.
+
+**How fast can a design subscription start compared to hiring?**
+A design subscription can usually start within days, while hiring a designer often takes months once you include recruiting and notice periods. Expect some setup time at the start, for example building a design system, before regular requests begin.
+
+**How does a design subscription keep quality consistent?**
+The best approach is to build a design system at the start and create every request from it. This keeps fonts, colours, layouts and components consistent across landing pages, decks and ads. It also speeds up later requests because the base is already in place.
+
+**Is a design subscription better than hiring freelancers?**
+For recurring work, a design subscription is usually more reliable because the same team keeps your context and works from a single queue. Freelancers can be a good fit for one-off, well-defined tasks. The risk with freelancers is availability and uneven quality over time.
+
+**Can I use a design subscription and an in-house designer together?**
+Yes, and many teams do. A subscription can handle campaign and marketing output while an in-house designer focuses on product or brand work. It is also a common bridge while you decide whether a full-time hire is justified.
+
+20min
+
+Author: Pavlo Lobodiuk, founder and lead designer at Torque Studio, with 10+ years of senior design work inside large corporate structures and a workflow built on AI tooling.
+
+Last updated: 21.10.2026
