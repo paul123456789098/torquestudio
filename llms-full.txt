@@ -134,3 +134,7 @@ Anastasiia Odegova
 - Languages: English, Ukrainian.
 - Structured data: Schema.org JSON-LD (Person x2, WebSite, ProfilePage, FAQPage) embedded in the homepage.
 - Machine files: /llms.txt (summary), /llms-full.txt (this file), /sitemap.xml, /robots.txt.
+
+## Blog
+
+- [Design subscription vs in-house designer: what's cheaper in 2026?](https://torquestudio.es/blog/design-subscription-vs-in-house-designer): Should you hire an in-house designer or use a design subscription? Compare real 2026 costs, speed, quality and fit, plus when a subscription is wrong.

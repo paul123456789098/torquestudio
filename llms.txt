@@ -27,3 +27,7 @@ Client work is under NDA. These five are concept brands that show how the studio
 - LinkedIn: https://www.linkedin.com/company/torque-design-studio
 - Website: https://torquestudio.es/
 - Full version: https://torquestudio.es/llms-full.txt
+
+## Blog
+
+- [Design subscription vs in-house designer: what's cheaper in 2026?](https://torquestudio.es/blog/design-subscription-vs-in-house-designer): Should you hire an in-house designer or use a design subscription? Compare real 2026 costs, speed, quality and fit, plus when a subscription is wrong.
