@@ -139,6 +139,167 @@ Anastasiia Odiehova
 
 - [Design subscription vs in-house designer: what's cheaper in 2026?](https://torquestudio.es/blog/design-subscription-vs-in-house-designer): Should you hire an in-house designer or use a design subscription? Compare real 2026 costs, speed, quality and fit, plus when a subscription is wrong.
 
+## Blog article: Landing page vs website for a campaign: which do you need?
+
+https://torquestudio.es/blog/landing-page-vs-website-campaign · 26 Oct 2026 · Pavlo Lobodiuk
+
+Landing page vs website for a campaign: when one focused page beats a new site, what each costs in time, and how to decide before your launch date.
+
+For almost every campaign, you need a landing page, not a new website. A campaign has one audience, one offer and one action, and a single focused page built for that action converts better and launches faster than a multi-page site. Build or rebuild a full website only when the problem is your company's whole online presence, not one campaign. In the landing page vs website for campaign decision, the question to ask is: "What is the one thing a visitor from this ad should do?"
+
+### Key takeaways
+
+- A landing page is built for one action from one traffic source. A website is built to explain the whole company to many audiences.
+
+- Unbounce's 2024 benchmark of more than 41,000 landing pages found a median conversion rate of 6.6% across industries.
+
+- A campaign landing page can be live in days. A new website usually takes weeks to months, plus content, approvals and development.
+
+- You need a new website, not a landing page, when your current site is outdated, off-brand or broken for everyone who visits it.
+
+- Many teams need both: a solid website for trust, and a separate landing page per campaign.
+
+### What is the difference between a landing page and a website?
+
+A landing page is a single page with one goal, such as a sign-up, a demo request or a purchase, built for visitors coming from a specific campaign. A website is a set of pages with navigation that explains who you are, what you sell and why to trust you, to anyone who arrives.
+
+The difference is focus. A homepage has to serve investors, job seekers, existing customers and new buyers at the same time. A campaign landing page serves one of them, at one moment, with one offer.
+
+That focus changes the design:
+
+- No main navigation. Every extra link is an exit from the campaign.
+
+- One call to action, repeated, not five competing ones.
+
+- Message match. The headline repeats the promise from the ad or email the visitor just clicked.
+
+- Only the proof that matters for this offer, such as a product demo, reviews or a short FAQ.
+
+### Do I need a new website or just a landing page for my campaign?
+
+You need just a landing page if your existing website is acceptable and the campaign has a clear single goal. You need a new website if the website itself is the problem, for example it is off-brand, slow, outdated or doesn't describe what you sell today.
+
+A simple test. Send a colleague the ad, then your homepage. Ask them: "Within 10 seconds, do you know what to do next?" If the answer is no, a landing page fixes the campaign. If they also say "this company looks outdated" or "I don't understand what you sell", that is a website problem, and a landing page only hides it for one campaign.
+
+Use this table to decide:
+
+Situation | Landing page | New website |
+
+Launching one product, offer or event | Yes | No |
+
+Paid ads, email or social campaign with one goal | Yes | No |
+
+Testing a new market, message or price point | Yes | No |
+
+Current site is off-brand or outdated for every visitor | Short-term fix only | Yes |
+
+You changed what the company sells or who it sells to | Short-term fix only | Yes |
+
+Need many pages for SEO, docs, careers or support | No | Yes |
+
+Launch date is less than a month away | Yes | Rarely realistic |
+
+Need to measure exactly which campaign drove results | Yes | Harder |
+
+### Why does a landing page usually convert better for campaigns?
+
+A landing page usually converts better because it removes choices that pull visitors away from the one action you want. Visitors from an ad arrive with a specific expectation. A page that confirms that expectation and offers one clear next step converts more of them.
+
+For context, Unbounce's Conversion Benchmark Report, which analysed more than 57 million conversions on more than 41,000 landing pages, found a median conversion rate of 6.6% across all industries, with 8.4% for financial services and 3.8% for SaaS. Use these as a rough reference, not a target: your offer, price and traffic quality matter more than the industry average.
+
+Comparable benchmarks for campaign traffic sent to a homepage are harder to find. The practical reason is clear, though. A homepage is designed to send people in many directions. A campaign needs them to go in one.
+
+Speed also matters. Most landing page visits happen on phones: 83% of the visits in Unbounce's benchmark data came from mobile devices. A light single page loads faster than a full site with scripts, menus and chat widgets, and every second counts. Google's web.dev performance guide cites the BBC losing an additional 10% of users for every extra second its site took to load.
+
+### How long does it take to build a landing page vs a website?
+
+A campaign landing page usually takes days to build once the message and assets are ready, while a full website usually takes several weeks to a few months. The design itself is rarely the slowest part. Content, approvals and development are.
+
+Step | Campaign landing page | Full company website |
+
+Content to write | One page of copy, one offer | Many pages, often from several teams |
+
+Stakeholders to align | Campaign owner plus one approver | Leadership, sales, product, legal |
+
+Design | One layout, built on your existing visual system | Full page system, navigation, templates |
+
+Development | Often one HTML page or a page builder | CMS, integrations, SEO migration, QA |
+
+Typical risk | Weak message or offer | Scope creep and a delayed launch |
+
+If your campaign date is fixed, this table usually makes the decision for you. Starting a website rebuild four weeks before a launch is how campaigns slip.
+
+### What should a campaign landing page include?
+
+A campaign landing page should include only what the visitor needs to take one action: a clear promise, proof, and a single call to action. Here is a structure that works for most product companies and consumer brands:
+
+- Headline that matches the ad. Same promise, same words where possible.
+
+- One sentence on who it's for and what they get.
+
+- Primary call to action above the fold, such as "Book a demo" or "Shop the launch".
+
+- Product visual or short video that shows the thing, not a stock photo.
+
+- Three to five benefits, each tied to a real problem.
+
+- Proof: reviews, client logos you have permission to use, numbers you can back up.
+
+- Short FAQ answering the top objections, such as price, delivery or contract terms.
+
+- The call to action again at the bottom.
+
+- Tracking set up before launch, so you know which ad and audience converted.
+
+What to leave out: the full company story, the team page, the blog, and links to every other product.
+
+### When is a landing page the wrong choice?
+
+A landing page is the wrong choice when the campaign depends on visitors exploring your company in depth, or when your main website is so weak that it undermines trust. Visitors often check the main site before they buy, especially in B2B.
+
+Choose a website project instead, or first, when:
+
+- Your brand changed and the site no longer reflects it.
+
+- Organic search is the main channel. SEO usually needs many pages of useful content, not one campaign page.
+
+- Buyers need to compare many products, plans or locations.
+
+- Your sales cycle is long and buyers return several times to read case studies, documentation and pricing.
+
+Even then, keep a dedicated landing page for each paid campaign. The website builds trust; the landing page does the converting.
+
+### How we do it at Torque
+
+Torque Studio designs campaign landing pages as part of a design subscription. The first week of a subscription is spent building the client's design system, so every landing page, ad banner and social visual that follows shares the same fonts, colours and components. Pavlo Lobodiuk builds landing pages in HTML himself, so clients don't need a developer to launch them. Full company websites are not part of the design subscription; Torque Studio handles them as a separate one-off project. Each request includes 3 revision rounds, and communication runs in Slack, 10:00–18:00 CET, Monday to Friday.
+
+### FAQ
+
+**Can I use my homepage as a campaign landing page?**
+You can, but it usually converts worse, because a homepage is built to serve many audiences with many links. Campaign visitors arrive with one expectation and need one next step. A dedicated page lets you match the ad's message and measure results cleanly.
+
+**How many landing pages should I have?**
+Plan one landing page per campaign or offer, and a variant per major audience if the message differs. If you run ads in two languages or for two customer types, they usually need separate pages. More pages also make it easier to see which message works.
+
+**Does a landing page help SEO?**
+A campaign landing page is usually built for paid, email or social traffic, not search. It can rank for a narrow term, but most SEO value comes from a website with many useful pages. Treat SEO and campaign landing pages as separate jobs.
+
+**Do I need a developer to launch a landing page?**
+Not always. Page builders and hand-built HTML pages can be launched without a full development team, as long as hosting, a domain or subdomain, forms and tracking are set up. Check who will make changes after launch before you choose the approach.
+
+**How long should a campaign landing page be?**
+As long as it takes to answer the visitor's main objections, and no longer. A simple, low-price offer can work with a short page. A higher-commitment action, such as booking a demo, usually needs more proof and an FAQ.
+
+**What should I do with the landing page after the campaign ends?**
+Redirect it to a relevant page or keep it live if it still converts. Before you take it down, save the results, the winning headline and the creative, since they are the starting point for the next campaign.
+
+20min
+
+Author: Pavlo Lobodiuk, founder and senior designer at Torque Studio, with 10+ years of senior design work inside large corporate structures, who builds campaign landing pages in HTML himself.
+
+Last updated: 26.10.2026
+
+
 ## Blog article: Design subscription vs in-house designer: what's cheaper in 2026?
 
 https://torquestudio.es/blog/design-subscription-vs-in-house-designer · 21 Oct 2026 · Pavlo Lobodiuk

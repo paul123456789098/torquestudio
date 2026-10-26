@@ -275,6 +275,22 @@ mark.chk{background:none;color:#f0a24a;outline:1px dashed rgba(240,162,74,.6);ou
 @media (max-width:1060px){.rd-grid{grid-template-columns:minmax(0,1fr)}.rd-toc{display:none}.rd-fig{margin-left:0!important;margin-right:0!important}}
 @media (max-width:880px){.rd-in{padding:28px 16px 90px}.rd-hero{grid-template-columns:1fr}.rd-cover{border-radius:24px}.rd-paper{border-radius:32px;padding:26px 20px}.rd-body{font-size:1rem}.rd-ring{width:44px;height:44px}}
 @media (prefers-reduced-motion:reduce){.rd,body.rd-open .rd{transition:none}}
+/* older articles under the big card: one slim row each */
+.bk-more{margin-top:clamp(18px,2vw,26px);display:flex;flex-direction:column;gap:10px}
+.bk-more>.rd-eye{margin:0 0 2px 6px}
+.bk-row{position:relative;display:grid;grid-template-columns:clamp(96px,11vw,150px) minmax(0,1fr) auto;align-items:center;gap:clamp(14px,1.6vw,22px);padding:10px 22px 10px 10px;border-radius:22px;cursor:pointer;
+  background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);transition:background var(--t-base) var(--e),border-color var(--t-base) var(--e)}
+.bk-row:hover,.bk-row:focus-visible{background:rgba(255,255,255,.06);border-color:rgba(255,196,106,.28);outline:none}
+.bk-row-img{display:block;aspect-ratio:16/11;border-radius:14px;overflow:hidden;background:#120c08}
+.bk-row-img img{width:100%;height:100%;object-fit:cover;object-position:100% 50%;display:block}
+.bk-row-txt{display:flex;flex-direction:column;gap:9px;min-width:0}
+.bk-row-txt>a{font-family:var(--serif);font-weight:500;font-size:clamp(1.02rem,1.3vw,1.22rem);line-height:1.2;letter-spacing:-.01em;color:#fff}
+.bk-row-go{font-size:1.1rem;color:rgba(255,196,106,.85);transition:transform var(--t-base) var(--e)}
+.bk-row:hover .bk-row-go{transform:translate(3px,-3px)}
+@media(max-width:880px){.bk-row{grid-template-columns:92px minmax(0,1fr);padding:10px 14px 10px 10px}.bk-row-go{display:none}.bk-row-txt .bl-meta{font-size:.74rem}}
+/* links inside the article text */
+.rd-body p a{color:#fff;text-decoration:underline;text-decoration-color:rgba(255,196,106,.55);text-decoration-thickness:1px;text-underline-offset:3px;transition:text-decoration-color var(--t-fast) var(--e)}
+.rd-body p a:hover{text-decoration-color:#ffc46a}
 
 /* standalone page: the site's warm glow behind, the article in normal flow */
 .ap-bg{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;background:#070504}
