@@ -764,13 +764,16 @@ html.js .card{flex:0 0 min(40vw,38rem);min-height:0}
   });
 
   /* scene 0 holds longer — that is where the shoe turns */
-  var SPAN = [2.4, 1.3, 1.9, 1.3, 1.3, 1.3];      // steps per scene
-  var HOLD = 0.62, TAIL = 0.62;
+  /* each scene: it holds (HD of its span), then hands over. Scenes with nothing moving inside (02, 06) hold only
+     briefly, so no wheel notch goes by without something changing; 01 (shoe turns), 03 (lateral run), 04 (bars)
+     and 05 (clip) keep the length their motion needs */
+  var SPAN = [2.4, 0.85, 1.9, 1.15, 1.3, 0.85];      // steps per scene
+  var HD = [0.62, 0.30, 0.62, 0.50, 0.62, 0.30], TAIL = 0.25;
   var starts = [], total = 0;
   SPAN.forEach(function(s){ starts.push(total); total += s; });
   /* the point at which the last scene has fully arrived — the real end of the
      story, and therefore what the progress bar is a fraction of */
-  var LAST = starts[N-1] + SPAN[N-1]*HOLD;
+  var LAST = starts[N-1] + SPAN[N-1]*HD[N-1];
 
   var hn = document.getElementById('hn'),
       bar = document.getElementById('bar'),
@@ -983,15 +986,15 @@ html.js .card{flex:0 0 min(40vw,38rem);min-height:0}
        driven by SPAN[a-1], so that is what its midpoint is measured against. */
     var act = 0;
     for(var a=0;a<N;a++){
-      var ramp = SPAN[a===0 ? 0 : a-1] * (1-HOLD);
+      var ramp = SPAN[a===0 ? 0 : a-1]*(1-HD[a===0 ? 0 : a-1]);
       if(t >= starts[a] - ramp*0.5) act = a;
     }
 
     for(var i=0;i<N;i++){
       var el = sc[i];
       var s0 = starts[i];
-      var eIn  = i===0 ? 1 : cl((t - (s0 - SPAN[i-1]*(1-HOLD)) ) / (SPAN[i-1]*(1-HOLD)));
-      var eOut = i===N-1 ? 0 : cl((t - (s0 + SPAN[i]*HOLD)) / (SPAN[i]*(1-HOLD)));
+      var eIn  = i===0 ? 1 : cl((t - (s0 - SPAN[i-1]*(1-HD[i-1])) ) / (SPAN[i-1]*(1-HD[i-1])));
+      var eOut = i===N-1 ? 0 : cl((t - (s0 + SPAN[i]*HD[i])) / (SPAN[i]*(1-HD[i])));
 
       /* eOut of scene i is identical to eIn of scene i+1, so a scene that has
          finished leaving is fully covered by an opaque one — dropping it costs
@@ -1018,7 +1021,7 @@ html.js .card{flex:0 0 min(40vw,38rem);min-height:0}
     }
 
     /* 01 — scroll drives the frame; nothing plays on its own */
-    var p0 = cl(t / (SPAN[0]*HOLD));
+    var p0 = cl(t / (SPAN[0]*HD[0]));
     hero.scrubTo(p0);
     /* the model paints a lit floor under the shoe past ~70% of the clip; mask just that */
     floormask.style.opacity = cl((p0 - 0.62) / 0.22).toFixed(3);
@@ -1033,13 +1036,13 @@ html.js .card{flex:0 0 min(40vw,38rem);min-height:0}
     glassplate.style.opacity = kGlass.toFixed(3);
 
     /* 03 — lateral run */
-    var p2 = cl((t - starts[2]) / (SPAN[2]*HOLD));
+    var p2 = cl((t - starts[2]) / (SPAN[2]*HD[2]));
     var x = latSpan * ease(p2);
     track.style.transform = 'translate3d('+(-x)+'px,0,0)';
     latbar.style.width = (p2*100)+'%';
 
     /* 04 — bars against the ruler */
-    var p3 = ease(cl((t - starts[3]) / (SPAN[3]*HOLD) * 1.5));
+    var p3 = ease(cl((t - starts[3]) / (SPAN[3]*HD[3]) * 1.5));
     bands.forEach(function(b){
       var hi = +b.dataset.mm, lo = +(b.dataset.lo || 0);
       b.style.bottom = ((lo/MAXMM)*100*p3).toFixed(3) + '%';
@@ -1065,7 +1068,7 @@ html.js .card{flex:0 0 min(40vw,38rem);min-height:0}
 
     /* 05 — the plate macro is a dolly, and the scroll is the dolly track */
     if (t > starts[4] - LEAD) plate.load();
-    plate.scrubTo((t - starts[4]) / (SPAN[4]*HOLD));
+    plate.scrubTo((t - starts[4]) / (SPAN[4]*HD[4]));
 
     /* 06 — the release loop runs only while its screen is within reach */
     if (t > starts[5] - LEAD) runStart(); else runStop();

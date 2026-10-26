@@ -1406,7 +1406,7 @@ window.PANO=(function(){
 
   var LABEL=['Start','Scale','How it works','Capabilities','Architecture','Regions','Trust','Pricing','Contact'];
   /* сколько «единиц» стоим на грани (0 дисторсии), переход между гранями = 1 единица */
-  var DWELL=[1.0,0.7,2.0,2.2,0.8,0.9,0.8,0.8,1.2];
+  var DWELL=[0.55,0.4,1.2,1.3,0.45,0.5,0.45,0.45,0.7];   /* was [1.0,0.7,2.0,2.2,0.8,0.9,0.8,0.8,1.2]: less standing still on a face */
   var TR=1.0;
   var U=0; for(var i=0;i<N;i++) U+=DWELL[i]; U+=(N-1)*TR;
 
