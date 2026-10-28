@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<script>/* inside the Torque case window the page is drawn scaled down: render at the pixels actually shown, not full Retina */
+(function(){try{var fe=window.frameElement;if(!fe)return;var real=window.devicePixelRatio||1;var k=parseFloat(getComputedStyle(fe.parentNode).getPropertyValue('--k'));if(!(k>0&&k<1))return;var d=Math.max(1,real*k);Object.defineProperty(window,'devicePixelRatio',{configurable:true,get:function(){return d}});}catch(e){}})();</script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Lamplight Gaming</title>
 <link rel="icon" type="image/png" href="img/favicon.44823519.png">
