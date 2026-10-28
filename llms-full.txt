@@ -35,7 +35,13 @@ A Senior Designer who owns the thinking, a Head of Operations who owns the deadl
 
 ## Selected work
 
-Client work is under NDA. These five are concept brands that show how the studio thinks: one idea carried through every campaign, ad and page.
+Client work is under NDA. These six are concept brands that show how the studio thinks: one idea carried through every campaign, ad and page.
+### Betting & iGaming (concept)
+Fewer slots, each one finished.
+Scope: Art direction · Studio website · Campaign posts · Partner deck.
+Slot studios all pitch the same way: hundreds of titles, flashing reels, a bonus in every line. Operators have seen it a thousand times and scroll past. This studio does the opposite: a small catalogue, every game finished properly, terms anyone can read. The brand is a night street lit one lamp at a time, and every lit window is a game you can open and play.
+Why it works: in a market that shouts volume, the studio that shows its care is the one buyers remember. Maths, art and fair terms are the three parts of every game, and the site, the posts and the deck say exactly that, so an operator understands the offer before the first call.
+
 ### Running Shoes (concept)
 Show the engineering, skip the hype.
 Scope: Art direction · Launch website · Campaign posts · Product deck.
@@ -129,7 +135,7 @@ Anastasiia Odiehova
 ## Meta
 
 - Brand: Torque Studio, a two-person design studio on subscription.
-- Type: single-page studio site with five embedded concept projects.
+- Type: single-page studio site with six embedded concept projects.
 - Audience: product companies and consumer brands that need a lot of design at a steady pace.
 - Languages: English, Ukrainian.
 - Structured data: Schema.org JSON-LD (Person x2, WebSite, ProfilePage, FAQPage) embedded in the homepage.
