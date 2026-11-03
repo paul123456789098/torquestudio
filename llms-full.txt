@@ -145,6 +145,149 @@ Anastasiia Odiehova
 
 - [Design subscription vs in-house designer: what's cheaper in 2026?](https://torquestudio.es/blog/design-subscription-vs-in-house-designer): Should you hire an in-house designer or use a design subscription? Compare real 2026 costs, speed, quality and fit, plus when a subscription is wrong.
 
+## Blog article: Can AI replace a designer? AI in a design workflow in 2026
+
+https://torquestudio.es/blog/ai-in-design-workflow · 3 Nov 2026 · Pavlo Lobodiuk
+
+Can AI replace a designer for marketing materials? Where AI in a design workflow is faster, where a human still decides, plus EU labelling rules for 2026.
+
+No, AI cannot replace a designer for marketing materials in 2026, but it does replace a large share of the manual production work. AI in a design workflow is fast at variations, image exploration, resizing and motion drafts; it is still weak at judging what is right for your brand, your audience and your campaign goal. The teams getting the most from AI use it to produce more options, and a senior designer to decide which one ships.
+
+### Key takeaways
+
+- In Figma's 2025 AI report (2,500 designers and developers), 78% said AI makes their workflow more efficient, but only 58% said it improves the quality of their work.
+
+- Designers are less satisfied with AI tools than developers: 69% vs 83% in the same survey.
+
+- AI is strongest at speed and volume: variations, backgrounds, product scenes, resizing and video drafts.
+
+- Humans are still needed for brand consistency, message hierarchy, legal and factual checks, and the final call on quality.
+
+- Since 2 August 2026, the EU AI Act requires visible disclosure of deepfakes, realistic AI-generated or manipulated images and video that could pass for real.
+
+### Can AI replace a designer for marketing materials?
+
+AI can replace parts of a designer's job, not the job itself. It can generate a product scene in minutes or produce twenty banner variations from one layout, but it cannot tell you which variation fits your brand, your campaign goal and your legal constraints.
+
+Survey data supports this split. In Figma's 2025 AI report, designers most often used AI for asset creation (31%), and fewer than half of respondents said AI made them better at their job. In other words, AI makes output faster. It does not make judgment better.
+
+The risk for marketing teams is a specific one. A generated image that is 90% right looks finished. The remaining 10%, a wrong product detail, distorted hands, an off-brand colour, a headline that breaks on mobile, is exactly what a customer notices.
+
+### What is AI faster at in a design workflow?
+
+AI is faster at work where many options are useful and each option is cheap to check. In a marketing design workflow, that covers a lot of production work.
+
+Task | What AI does well | What still needs a human |
+
+Image exploration | Dozens of concepts, moods and scenes in minutes | Choosing the one that fits the brand and message |
+
+Product visuals | Backgrounds, lighting, lifestyle scenes | Checking product accuracy, labels, colours |
+
+Banner resizing | Adapting one layout to many formats | Fixing hierarchy where the format breaks it |
+
+Copy variations | Headline and CTA options for testing | Brand voice, claims, legal accuracy |
+
+Video and motion | Short drafts, animated product shots, storyboards | Pacing, story, brand fit, final edit |
+
+Presentations | First layouts and visual ideas | Structure of the argument, data accuracy |
+
+Retouching | Removing objects, extending backgrounds | Knowing when the result looks fake |
+
+The pattern: AI shortens the time from brief to first options. It doesn't shorten the time it takes to decide, unless someone experienced makes the decisions.
+
+### What still needs a human designer?
+
+A human designer is still needed for decisions that depend on context the AI doesn't have: your brand, your audience, your campaign goal and your risk tolerance. These decisions are where most of the value sits.
+
+- Brand consistency across many pieces. AI generates each image on its own. A campaign needs 30 pieces that look like one company. That consistency comes from a design system, not from prompts.
+
+- Hierarchy. On every piece, the eye should land on one thing first. AI often produces images that are attractive but say nothing in particular.
+
+- Accuracy. Product details, logos, prices and claims must be correct. AI tools still invent details, especially in small text, logos and product labels.
+
+- Format reality. A visual that works at full size often fails as a small mobile banner. A designer checks every format, not just the hero.
+
+- Taste and restraint. Knowing what to remove is still the hardest part of design.
+
+### Who owns AI-generated designs?
+
+Ownership of AI-generated designs depends on how much human creative control went into the final piece. Purely prompt-generated images may not be protected by copyright at all.
+
+In its January 2025 report on copyrightability, the US Copyright Office concluded that "prompts alone do not provide sufficient human control" for the output to be copyrighted, while human selection, arrangement and modification of AI output can be protected. In the EU, copyright protects only a work that is the author's own intellectual creation, so the same logic applies: the more a human selects, edits and composes, the stronger the claim.
+
+For marketing teams, the practical point is simple. If a key visual matters to your brand, make sure a human designs, edits and composes it, and check each AI tool's commercial-use terms before you publish.
+
+### Do you have to label AI-generated marketing visuals in the EU?
+
+In many cases, yes. Since 2 August 2026, Article 50 of the EU AI Act applies and requires clear labelling of deepfakes: AI-generated or AI-manipulated images, audio and video that could pass for real.
+
+What this means for brands, based on current guidance:
+
+- Visible labels, not just metadata. If a customer could mistake an AI image for a real photo, the label should be visible at first glance.
+
+- "AI-generated" and "AI-modified" are different disclosures.
+
+- Creative works get a lighter touch, but origin still has to be disclosed in a way that doesn't spoil the work.
+
+- Fines can reach €15 million or 3% of worldwide annual turnover, whichever is higher.
+
+The Commission's final Code of Practice on marking and labelling AI-generated content (June 2026) is voluntary, but it is the main reference for how labels should look, and the Commission published its guidelines on the scope of Article 50 in August 2026. This is not legal advice; check with your legal team before a large AI-led campaign.
+
+### How should a marketing team use AI in its design workflow?
+
+A marketing team should use AI to produce more options faster, and keep a clear human step for brand, accuracy and final approval. Here is a workflow that works:
+
+- Start from a design system, not a blank prompt. Fonts, colours, layouts and components are fixed first.
+
+- Use AI for exploration: moods, scenes, variations, motion drafts.
+
+- Select with a senior eye. Pick the strongest one or two, not the most polished-looking.
+
+- Rebuild or refine inside the system, so the AI result matches every other piece in the campaign.
+
+- Check accuracy: product, logo, text, claims, rights.
+
+- Label where required under the EU AI Act.
+
+- Test in real formats: mobile feed, story, small banner, deck slide.
+
+### When is AI alone good enough?
+
+AI alone is good enough for internal and low-risk work: mood boards, storyboards, internal presentations, quick social tests that will be replaced, and first drafts for discussion. It is not good enough for anything that carries your brand to customers at scale without a review step.
+
+A useful rule: the more people will see it and the longer it stays live, the more human design it needs.
+
+### How we do it at Torque
+
+Torque Studio uses AI in its design workflow for AI visuals and video, image exploration, variations and motion drafts, as part of a design subscription. Pavlo Lobodiuk, founder and lead designer, has 10+ years of senior design work inside large corporate structures and builds AI tooling into the workflow. AI output is refined inside the client's design system, which Torque Studio builds in the first week of every subscription, so AI visuals match the landing pages, decks and banners around them. Each request includes 3 revision rounds, and communication runs in Slack, 10:00–18:00 CET, Monday to Friday.
+
+### FAQ
+
+**Will AI make designers obsolete?**
+Not for marketing design in 2026. AI removes much of the manual production work, but brands still need someone to decide what fits, check accuracy and keep many pieces consistent. The role is shifting from making every asset by hand to directing and editing.
+
+**Which design tasks are best for AI?**
+Tasks with many cheap-to-check options: image exploration, backgrounds, product scenes, resizing banners into many formats, and short video drafts. Tasks that need brand judgment, accurate details or a clear argument still need a designer.
+
+**Can I use AI-generated images in paid ads?**
+Usually yes, if the tool's licence allows commercial use and the image is accurate. In the EU, since 2 August 2026, realistic AI-generated or manipulated images that could pass for real need a visible disclosure. Check the platform's ad policies too, since they can have their own rules.
+
+**Is AI-generated design copyrighted?**
+Purely prompt-generated images may not be protected. The US Copyright Office's 2025 report found prompts alone don't give enough human control, while human selection, arrangement and editing can be protected. Rules differ by country, so check locally for key brand assets.
+
+**Does AI make design cheaper?**
+It makes production faster, which can lower the cost per asset. It doesn't remove the cost of judgment, review and fixing errors. Teams that skip that step often pay for it later with off-brand or inaccurate creative.
+
+**How do I keep AI visuals consistent with my brand?**
+Start from a design system and treat AI output as raw material, not final artwork. Refine every AI image inside your fonts, colours, layouts and components. Consistency comes from the system and the person applying it, not from the prompt.
+
+20min
+
+Author: Pavlo Lobodiuk, founder and lead designer at Torque Studio, with 10+ years of senior design work inside large corporate structures and a workflow built on AI tooling.
+
+Last updated: 03.11.2026
+
+
 ## Blog article: Landing page vs website for a campaign: which do you need?
 
 https://torquestudio.es/blog/landing-page-vs-website-campaign · 26 Oct 2026 · Pavlo Lobodiuk
