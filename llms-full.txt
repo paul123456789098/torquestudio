@@ -145,6 +145,172 @@ Anastasiia Odiehova
 
 - [Design subscription vs in-house designer: what's cheaper in 2026?](https://torquestudio.es/blog/design-subscription-vs-in-house-designer): Should you hire an in-house designer or use a design subscription? Compare real 2026 costs, speed, quality and fit, plus when a subscription is wrong.
 
+## Blog article: How to write a design brief the designer gets right first time
+
+https://torquestudio.es/blog/how-to-write-a-design-brief · 10 Nov 2026 · Anastasiia Lobodiuk
+
+How to write a design brief that works: the 8 fields every brief needs, a copy-ready template, and the mistakes that cause extra revision rounds.
+
+To write a design brief the designer gets right the first time, answer eight things in writing before work starts: the goal, the audience, the key message, every format and size, the content, the references, the deadline, and the one person who approves. Most revision rounds are not caused by bad design. They are caused by information that was missing from the brief and arrived later as feedback. This guide on how to write a design brief gives you the fields, a template and the mistakes to avoid.
+
+### Key takeaways
+
+- A good design brief answers eight questions: goal, audience, message, formats, content, references, deadline and approver.
+
+- Unclear requirements are a well-documented cause of failed work: PMI found that 47% of unsuccessful projects missed their goals because of inaccurate requirements management (PMI Pulse of the Profession, 2014).
+
+- List every format up front. Sizes added after the first draft are one of the most common reasons a deadline slips.
+
+- Name one approver. Feedback from several people who disagree costs more time than any design change.
+
+- Short is fine. A clear five-line brief beats a long document nobody finished.
+
+### What is a design brief?
+
+A design brief is a short written description of what needs to be designed, why, for whom and by when. It is the designer's single source of truth, and it is what you check the result against.
+
+A brief is not a creative direction document or a mood board. It can include references, but its main job is to remove guesswork. If the designer has to guess the goal, the audience or the sizes, the first draft is a guess too.
+
+### Why do design requests go wrong?
+
+Design requests usually go wrong because key information is missing at the start, not because the designer misunderstood a clear brief. Missing information doesn't disappear. It returns as feedback on the first draft, when changing direction is expensive.
+
+The pattern I see most often in a design queue:
+
+- A request arrives as one line in a chat: "Can we get a banner for the launch?"
+
+- The designer makes reasonable assumptions about size, message and tone.
+
+- The first draft goes to three people. One wants a different headline, one wants a different product photo, one asks for Instagram story and LinkedIn formats too.
+
+- The second round fixes the first round's feedback and reveals new disagreements.
+
+None of this is a design problem. It is a briefing and approval problem. PMI's research on requirements points the same way: nearly half of unsuccessful projects miss their goals because of inaccurate requirements management. The data comes from project management, not design specifically, but the mechanism is the same.
+
+### What should a design brief include?
+
+A design brief should include eight fields. Each one answers a question the designer would otherwise have to guess.
+
+Field | Question it answers | Weak example | Strong example |
+
+Goal | What should this piece achieve? | "Promote the launch" | "Get demo bookings from the launch ad campaign" |
+
+Audience | Who will see it, and what do they already know? | "Our customers" | "Marketing directors at mid-size e-commerce brands who haven't heard of us" |
+
+Key message | What is the one thing they should remember? | "We're the best" | "Set up in one day, no developer needed" |
+
+Formats and sizes | Where will it appear, in which sizes and languages? | "Social banner" | "LinkedIn 1200×627, Instagram story 1080×1920, EN and ES" |
+
+Content | What text, images, logos and data must appear? | "Use the usual stuff" | "Headline and CTA below, product screenshot attached, logo from the brand folder" |
+
+References | What should it look like, or not look like? | none | "Like our last webinar banner; avoid stock photos of people" |
+
+Deadline | When is the final version needed, and when is it used? | "ASAP" | "Final by Thursday 12:00, campaign starts Monday" |
+
+Approver | Who gives the final yes? | "The team" | "Head of Marketing (one named person), final decision" |
+
+If you only have time for three fields, write the goal, the formats and the approver. These three prevent most rework.
+
+### How do you write a design brief step by step?
+
+Write a design brief by answering the eight fields in order, attaching the content, and confirming the approver before you send it. Here is the process:
+
+- Start with the goal in one sentence. If you can't write it, the request isn't ready yet.
+
+- Describe the audience in one line, including what they already know about you.
+
+- Write the key message as the visitor should remember it, not as an internal tagline.
+
+- List every format, size and language now. Check with the channel owners before you send the brief.
+
+- Attach final content: copy, product images, logos, data. Mark anything that is still a placeholder.
+
+- Add one to three references, and say what you like about each. "Like this" without a reason is hard to use.
+
+- Give two dates: when you need the final file, and when it goes live.
+
+- Name one approver, and agree with them before the brief goes out.
+
+- Read it as the designer. Could someone outside your company start work without asking a question?
+
+### What does a good design brief template look like?
+
+A good design brief template is short enough to fill in within ten minutes. Copy this one into Slack, email or your project tool:
+
+Goal:
+Audience:
+Key message (one sentence):
+Formats / sizes / languages:
+Content attached (copy, images, logo, data):
+References (and what to take from each):
+Final file needed by:        Goes live on:
+Approver (one name):
+Anything that must not appear:
+The last line matters more than it looks. "No people in the image", "don't mention price" or "avoid our old logo" saves a full round of revisions.
+
+### What are the most common design brief mistakes?
+
+The most common design brief mistakes are missing formats, unnamed approvers, placeholder content and vague goals. Each one costs a revision round or a missed deadline.
+
+- "ASAP" as a deadline. Every request becomes urgent, so none of them is. Give a real date and say whether it can move.
+
+- Formats added later. A layout built for a wide LinkedIn banner rarely works as a vertical story. Adding formats after approval often means redesigning, not resizing.
+
+- Feedback from a committee. When several stakeholders comment separately and disagree, the designer ends up mediating. Collect feedback, resolve conflicts, then send one consolidated list.
+
+- Placeholder copy treated as final. If the headline changes after design, the layout often changes too.
+
+- References without reasons. Three references with three different styles leave the designer to pick one, and it may not be the one you meant.
+
+- No success criteria. Without a goal, feedback turns into personal taste.
+
+### How does a better brief reduce revision rounds?
+
+A better brief reduces revision rounds because feedback shifts from "this isn't what we meant" to small refinements. When the goal, formats and approver are clear, the first draft is already in the right direction.
+
+| Vague brief | Clear brief |
+
+First draft | Based on assumptions | Based on agreed goal and content |
+
+Round 1 feedback | Direction change, new formats | Small copy and visual refinements |
+
+Round 2 feedback | New opinions from new reviewers | Final approval |
+
+Risk to deadline | High | Low |
+
+A fixed number of revision rounds helps too. When each round is limited, teams tend to consolidate comments and give clearer, more specific feedback.
+
+### How we do it at Torque
+
+At Torque Studio, every request arrives through Slack and goes into one queue, which Anastasiia Lobodiuk, Head of Operations, owns together with the deadlines. Each request includes 3 revision rounds, and every design builds on the client's design system, which Torque Studio creates in the first week of the subscription. Working hours are 10:00–18:00 CET, Monday to Friday.
+
+### FAQ
+
+**How long should a design brief be?**
+Long enough to answer the eight fields, which is often five to fifteen lines. A brief for a single banner can be short; a brief for a campaign with many formats needs more detail on sizes and content. Length matters less than whether a designer could start without asking questions.
+
+**Who should write the design brief?**
+The person who owns the result, usually the campaign owner or marketing manager. They know the goal, the audience and the deadline. If someone else writes it, the owner should still confirm it and name the approver.
+
+**What if I don't know exactly what I want?**
+Say so in the brief, and state the goal and audience clearly. Ask for two or three directions in the first round instead of one finished piece. A clear goal with an open visual direction is much easier to work with than a fixed visual idea with no goal.
+
+**Should a design brief include a budget?**
+For in-house teams or a design subscription, usually not, but include priority and deadline instead. For one-off projects with external agencies or freelancers, a budget helps them propose the right scope. Either way, say which requests matter most if several arrive at once.
+
+**How do I give feedback after the first draft?**
+Collect feedback from everyone, resolve disagreements internally, and send one consolidated list. Refer back to the brief: say what doesn't match the goal or message, not only what you dislike. Specific feedback, such as "make the CTA larger and use the second headline", saves a round.
+
+**Can I change the brief after work starts?**
+Yes, but treat it as a new decision, not a small comment. Tell the designer what changed and why, and expect the timeline to move if formats or the main message change. Changes to goal, formats or content usually cost the most.
+
+20min
+
+Author: Anastasiia Lobodiuk, Head of Operations at Torque Studio, who owns the design queue and deadlines and sees every brief before work begins.
+
+Last updated: 10.11.2026
+
+
 ## Blog article: Can AI replace a designer? AI in a design workflow in 2026
 
 https://torquestudio.es/blog/ai-in-design-workflow · 3 Nov 2026 · Pavlo Lobodiuk

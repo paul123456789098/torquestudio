@@ -31,6 +31,7 @@ Client work is under NDA. These six are concept brands that show how the studio 
 
 ## Blog
 
+- [How to write a design brief the designer gets right first time](https://torquestudio.es/blog/how-to-write-a-design-brief): How to write a design brief that works: the 8 fields every brief needs, a copy-ready template, and the mistakes that cause extra revision rounds.
 - [Can AI replace a designer? AI in a design workflow in 2026](https://torquestudio.es/blog/ai-in-design-workflow): Can AI replace a designer for marketing materials? Where AI in a design workflow is faster, where a human still decides, plus EU labelling rules for 2026.
 - [Landing page vs website for a campaign: which do you need?](https://torquestudio.es/blog/landing-page-vs-website-campaign): Landing page vs website for a campaign: when one focused page beats a new site, what each costs in time, and how to decide before your launch date.
 - [Design subscription vs in-house designer: what's cheaper in 2026?](https://torquestudio.es/blog/design-subscription-vs-in-house-designer): Should you hire an in-house designer or use a design subscription? Compare real 2026 costs, speed, quality and fit, plus when a subscription is wrong.
