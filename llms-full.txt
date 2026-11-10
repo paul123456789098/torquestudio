@@ -147,7 +147,7 @@ Anastasiia Odiehova
 
 ## Blog article: How to write a design brief the designer gets right first time
 
-https://torquestudio.es/blog/how-to-write-a-design-brief · 10 Nov 2026 · Anastasiia Lobodiuk
+https://torquestudio.es/blog/how-to-write-a-design-brief · 10 Nov 2026 · Anastasiia Odiehova
 
 How to write a design brief that works: the 8 fields every brief needs, a copy-ready template, and the mistakes that cause extra revision rounds.
 
@@ -282,7 +282,7 @@ A fixed number of revision rounds helps too. When each round is limited, teams t
 
 ### How we do it at Torque
 
-At Torque Studio, every request arrives through Slack and goes into one queue, which Anastasiia Lobodiuk, Head of Operations, owns together with the deadlines. Each request includes 3 revision rounds, and every design builds on the client's design system, which Torque Studio creates in the first week of the subscription. Working hours are 10:00–18:00 CET, Monday to Friday.
+At Torque Studio, every request arrives through Slack and goes into one queue, which Anastasiia Odiehova, Head of Operations, owns together with the deadlines. Each request includes 3 revision rounds, and every design builds on the client's design system, which Torque Studio creates in the first week of the subscription. Working hours are 10:00–18:00 CET, Monday to Friday.
 
 ### FAQ
 
@@ -306,7 +306,7 @@ Yes, but treat it as a new decision, not a small comment. Tell the designer what
 
 20min
 
-Author: Anastasiia Lobodiuk, Head of Operations at Torque Studio, who owns the design queue and deadlines and sees every brief before work begins.
+Author: Anastasiia Odiehova, Head of Operations at Torque Studio, who owns the design queue and deadlines and sees every brief before work begins.
 
 Last updated: 10.11.2026
 
