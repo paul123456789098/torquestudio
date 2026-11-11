@@ -1,6 +1,6 @@
-# Torque Studio · Senior design on subscription
+# Torque Studio – Marketing design subscription for startups and growing teams
 
-> A senior designer and a head of operations on your team, not on your payroll. Design direction for product companies and consumer brands that need a lot of design, fast. Ads, campaigns, websites, decks and landing pages: thought through by hand, produced with AI in the engine room, shipped in days, not months. On subscription. One flat monthly fee.
+> All your marketing design. One subscription. Design subscription for startups and growing teams. On your team, not on your payroll: landing pages, decks, ads and social, designed by a senior team with agency and in-house experience. Every request delivered within 3 working days.
 
 ## Who
 
@@ -8,7 +8,7 @@ Torque Studio is a design studio on subscription run by two people.
 
 - Pavlo Lobodiuk, Founder · Senior Designer. Ten years in design, the last three running production on AI. I set the idea, the story and the rules, the engine produces the volume, and Anastasiia keeps every deadline on track. You get more directions, faster, with the same taste behind every one of them.
 - Anastasiia Odiehova, Head of Operations. I keep the engine running: your queue, your deadlines, every call. Nine years in marketing, Meta and LinkedIn campaigns, personal brands for B2B founders: I speak your team's language and turn requests into clear tasks. Pavlo designs, you never chase anyone.
-- Why the two of us: A great designer alone is a freelancer. A great designer with someone running the process is a studio you can rely on. Pavlo owns every design decision. Anastasiia makes sure it arrives on time, every time.
+- Why the two of us: A great designer alone is a freelancer. A great designer with someone running the process is a studio you can rely on. Pavlo owns every design decision. Anastasiia makes sure it arrives on time, every time. As we grow, every designer works inside the same system – and every piece passes Pavlo’s review.
 
 ## Why a subscription and not a hire
 
@@ -17,15 +17,27 @@ You need design every week. Not a hiring process.
 - **Freelancers**: Cheaper, until the deadline. Then they are busy, sick or gone, and every new one needs your brand explained from scratch.
 - **Agencies**: A team, a process, a timeline in months. Right for a rebrand every five years, heavy for the work you need every week.
 
-## Our Flow (how it works)
+## How it works
+
+From first call to a steady weekly flow of design.
 
 A Senior Designer who owns the thinking, a Head of Operations who owns the deadlines, and a production engine that does the work of a team. Fewer meetings, faster iterations, one team responsible for the whole picture.
 1. **We talk**: One call about what you are building and where it has to go. We look at your website before we meet, so we start with ideas, not small talk.
 2. **We think**: Research, references, the idea. You get a direction with a point of view, not a mood board, and usually more than one to choose from.
 3. **The engine runs**: AI does the heavy production inside the rules we set: variants, formats, sizes. Every piece passes through our hands before it reaches yours.
-4. **It keeps running**: Every new request goes into your queue and comes back within 3 working days, built on the same system. Month after month.
+4. **It keeps running**: Every request comes back within 3 working days. Simple ones often the same day.
+
+## Deadlines are a system, not a promise
+
+Every request gets a date the moment you send it. You see where it sits in the queue, get a status update every morning and a summary every Friday. If anything risks running late, we know before you do.
+- Queue position on every request
+- Daily status in Slack
+- Weekly report every Friday
+- One person accountable for every deadline
 
 ## Services: everything your marketing runs on
+
+Which of these run in parallel depends on your plan.
 
 - **Campaign landing pages**: Single pages for ads, launches and events. Designed, built, launched and hosted, no developer needed.
 - **Ad creatives**: Several versions to test, not one pretty version.
@@ -35,7 +47,7 @@ A Senior Designer who owns the thinking, a Head of Operations who owns the deadl
 
 ## Selected work
 
-Client work is under NDA. These six are concept brands that show how the studio thinks: one idea carried through every campaign, ad and page.
+Concept projects – self-initiated work that shows how we think and build.
 ### Betting & iGaming (concept)
 Fewer slots, each one finished.
 Scope: Art direction · Studio website · Campaign posts · Partner deck.
@@ -74,6 +86,9 @@ Why it works: when a product is honest, the best marketing is a clear explanatio
 
 ## FAQ
 
+**What does “all your marketing design” mean?**
+Every type of marketing design your team needs – landing pages, decks, ads, social, AI visuals. Requests run one at a time or in parallel, depending on your plan. Logos, full rebrands and print aren’t included.
+
 **Who is this for?**
 Product companies and consumer brands that need a lot of design at a steady pace: launches, campaigns, ads, decks, all speaking one visual language. If you need a single logo or a full rebrand, an agency will serve you better.
 
@@ -86,8 +101,11 @@ One flat monthly fee, no hourly meter, no hidden extras. Three plans, and the di
 **What exactly do I get?**
 Design every week, not a single file: ad creatives, social media, presentations and pitch decks, AI visuals and video, and campaign landing pages, all built on one system. You own everything once paid, source files included. Logos, rebrands and print are not part of the subscription.
 
-**Is this AI-generated design? Will it look like every other AI image?**
-AI is the production line, not the designer. The idea, the direction and the rules are set by hand first; AI then does the production work inside those rules, and every piece is reviewed before you see it. That is why the results look like your brand and not like a stock render.
+**Is this AI-generated design?**
+No. Every piece is designed by a senior designer. We use AI to move faster – for drafts, variations and visuals – but a person makes every decision and signs off every file.
+
+**What if a deadline slips?**
+You’ll know before it happens. Every request has a date, and we flag any risk in Slack the same day – with a new date and the reason.
 
 **What do you need from me to start?**
 One conversation: what you sell, who buys it, where you want to be in a year, and what you already have. Bring your brand book, logo files and fonts if you have them. After the call you get the plan and the monthly fee in writing, and we start within 48 hours.
