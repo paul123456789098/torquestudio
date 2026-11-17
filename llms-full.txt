@@ -163,6 +163,163 @@ Anastasiia Odiehova
 
 - [Design subscription vs in-house designer: what's cheaper in 2026?](https://torquestudio.es/blog/design-subscription-vs-in-house-designer): Should you hire an in-house designer or use a design subscription? Compare real 2026 costs, speed, quality and fit, plus when a subscription is wrong.
 
+## Blog article: Design subscription vs freelancer vs agency: which fits you?
+
+https://torquestudio.es/blog/design-subscription-vs-freelancer-vs-agency · 17 Nov 2026 · Pavlo Lobodiuk
+
+Design subscription vs freelancer vs agency: compare cost, speed, quality and management load, and see which fits a growing product company in 2026.
+
+For a growing product company with a steady flow of marketing design, a design subscription is usually the best fit. Use a freelancer for one-off, clearly scoped tasks, and an agency for big strategic projects such as a rebrand or a full campaign concept. In the design subscription vs freelancer vs agency decision, the deciding factor is not the hourly rate but how often you need design and who manages the work.
+
+### Key takeaways
+
+- Freelancers are the cheapest per hour. A Gráffica survey cited by Xolo puts Spanish freelance graphic designers aged 30–49 at €35–€40 per hour (Xolo, March 2026).
+
+- Agencies cost more and work in projects. Clutch lists Spanish design agencies at $50–$99 per hour, and most design projects on Clutch cost under $10,000 (Clutch, September 2026).
+
+- A design subscription is a fixed monthly fee for an ongoing queue of requests. It pays off when you have recurring work, not a single project.
+
+- The hidden cost of freelancers is management: briefing, chasing and re-explaining your brand to each new person.
+
+- A design subscription is the wrong choice for branding, print, deep product UX or a one-off project.
+
+### What is the difference between a freelancer, an agency and a design subscription?
+
+A freelancer is one independent designer paid per hour or per project, an agency is a team that runs scoped projects or retainers, and a design subscription is a fixed monthly fee for an ongoing queue of design requests handled by the same team.
+
+The models differ less in talent than in how work flows:
+
+- Freelancer: you find the person, write the brief, manage the deadline and check the result. Every new task is a new negotiation.
+
+- Agency: you agree a scope and budget up front. The agency adds strategy, account management and a wider team, and charges for all of it.
+
+- Design subscription: you add requests to a queue, the team works through them in order, and the monthly fee stays the same whether you send three requests or ten.
+
+### How much does each option cost in 2026?
+
+Freelancers are cheapest per hour, agencies are the most expensive, and a design subscription sits in between with a fixed monthly cost instead of a variable one.
+
+| Freelancer | Agency | Design subscription |
+
+Pricing model | Per hour or per project | Per project or monthly retainer | Fixed monthly fee |
+
+Typical rate (Spain) | €35–€40/hour for designers aged 30–49 (Gráffica via Xolo) | $50–$99/hour (Clutch) | From about $700/month for entry plans to $5,000–$6,000 for senior studios; enterprise creative teams start at $15,000 (Suur, October 2026) |
+
+Start time | Days, if the right person is free | Weeks: proposal, scope, contract | Days, with a setup phase first |
+
+Who manages the work | You | Agency account manager | The subscription team, from a single queue |
+
+Brand consistency | Depends on the person, drops when you switch | High within a project | High, if built on a design system |
+
+Best for | One-off, clearly scoped tasks | Rebrands, campaign concepts, big launches | Recurring marketing design |
+
+Weak spot | Availability, uneven quality | Cost, slower small requests | Not for branding, print or product UX |
+
+Two caveats about these numbers. Hourly rates only compare well if the hours are comparable: a senior designer who knows your brand may finish in two hours what a new freelancer needs six for. And Clutch's average project cost ($56,303) is pulled up by large product and UX projects; Clutch itself notes that most design projects cost under $10,000.
+
+### When is a freelancer the right choice?
+
+A freelancer is the right choice when the task is one-off, the scope is clear and you have time to brief and review it yourself.
+
+Good examples:
+
+- A single illustration or icon set in a specific style.
+
+- A one-time event poster or a print job (a design subscription often won't cover print).
+
+- A specialist skill you need once, like 3D product renders or a custom typeface.
+
+Freelancers struggle with recurring campaign work. The person who did a great job in March may be fully booked in May. When you switch, your brand context leaves with them. You then pay, in hours of your own time, to explain it again.
+
+A useful test: if you have hired more than two freelancers for the same type of work in the last six months, you don't have a freelancer problem, you have a recurring need.
+
+### When is an agency the right choice?
+
+An agency is the right choice when you need strategy and a team for a defined, high-stakes project, not a steady flow of small requests.
+
+Good examples:
+
+- A rebrand or a new visual identity.
+
+- A big campaign concept that needs research, copy, art direction and production together.
+
+- A full company website built as one project.
+
+Agencies are less efficient for the everyday work: the banner resize, the sales deck update, the landing page for next week's webinar. Each small request still goes through account management, and the cost per request reflects that. Many marketing teams end up paying agency rates for work that does not need agency thinking.
+
+### When is a design subscription the right choice?
+
+A design subscription is the right choice when you have recurring marketing design every month and want one senior team that already knows your brand.
+
+Typical signs:
+
+- You need several pieces every month: landing pages, pitch decks, ad banners, social visuals.
+
+- Your marketing director spends hours managing freelancers instead of marketing.
+
+- Your visuals look different depending on who made them.
+
+- You are not ready to hire a full-time designer, or don't have enough work to justify one. (Torque Studio compared that option in detail in design subscription vs in-house designer.)
+
+### When is a design subscription not the right fit?
+
+A design subscription is not the right fit when you need a one-off project, deep strategy, or work outside the subscription's scope.
+
+Be honest with yourself about these cases:
+
+- You need a new brand identity. Branding is a project with its own process. Hire an agency or a brand studio.
+
+- You need print. Packaging, signage and printed materials are usually outside a subscription.
+
+- You need product UX inside your app. That needs someone embedded with your product team.
+
+- You have one task a quarter. A freelancer will be cheaper.
+
+- You need someone in the office every day. Hire in-house.
+
+### Design subscription vs freelancer vs agency: how do I choose?
+
+Choose by looking at your real workload for the last three months, not by comparing rates.
+
+- List every design request from the last three months: what it was, how urgent, who made it.
+
+- Sort them into two piles: one-off projects and recurring work.
+
+- Count the recurring work per month. If it is regular every month, a design subscription or an in-house hire makes sense. If it is close to zero, use freelancers.
+
+- Check the one-off projects. If they are strategic (rebrand, new website), budget for an agency or a separate project.
+
+- Add your own time. Estimate the hours you or your team spent briefing, chasing and fixing. That time is part of the cost.
+
+Many growing companies end up with a mix: a design subscription for the monthly flow, plus an agency once a year for a big strategic project.
+
+### How we do it at Torque
+
+Torque Studio runs a design subscription for product companies and consumer brands. The first week of every subscription goes into building the client's design system, and every later request (landing pages, presentations and pitch decks, ad banners, social visuals, AI visuals and video) builds on it. Pavlo Lobodiuk, founder and lead designer, builds landing pages in HTML himself, so clients don't need a developer. Each request includes 3 revision rounds, communication runs in Slack, and Anastasiia Lobodiuk, Head of Operations, owns the queue and deadlines. Branding and print are outside the scope, and full company websites are a separate one-off project.
+
+### FAQ
+
+**Is a design subscription cheaper than a freelancer?**
+Per hour, usually not. Per month, it can be, if you have regular work and count the time you spend finding, briefing and managing freelancers. For one or two tasks a quarter, a freelancer is cheaper.
+
+**Is a design subscription the same as an agency retainer?**
+No. A retainer usually buys a set number of hours or deliverables for agreed scope, often with account management on top. A design subscription works from a queue of requests at a fixed monthly fee, and is built for ongoing production rather than strategy.
+
+**Can I use a freelancer and a design subscription together?**
+Yes. A design subscription can handle the recurring marketing work, while a freelancer covers a specialist one-off, such as illustration or print. Share the design system with the freelancer so the work stays consistent.
+
+**How fast does a design subscription start?**
+A design subscription typically starts within days, but expect a setup phase first. Building a design system in the first week makes every later request faster and more consistent.
+
+**What should I ask before signing a design subscription?**
+Ask what is in scope and what is not, how many revision rounds each request includes, how you communicate, what the working hours are, and who is responsible for deadlines. Then check the scope against your own list of requests from the last three months.
+
+20min
+
+Pavlo Lobodiuk is the founder and lead designer of Torque Studio, with 10+ years of senior design work inside large corporate structures.
+
+Last updated: 17.11.2026
+
 ## Blog article: How to write a design brief the designer gets right first time
 
 https://torquestudio.es/blog/how-to-write-a-design-brief · 10 Nov 2026 · Anastasiia Odiehova
