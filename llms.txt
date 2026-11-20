@@ -17,12 +17,12 @@ Torque Studio is a design studio on subscription, run by Pavlo Lobodiuk (Founder
 ## Work
 
 Concept projects – self-initiated work that shows how we think and build.
-- Betting & iGaming: Fewer slots, each one finished.
-- Running Shoes: Show the engineering, skip the hype.
-- Architecture Firm: Feel the buildings before you meet the architect.
-- Urban Sunglasses: Six frames. 640 pairs. Then gone.
-- IT Company: A product you can’t see, made trustworthy.
-- Beverage: A soda that explains itself.
+- [Betting & iGaming](https://torquestudio.es/lamplight/): Fewer slots, each one finished.
+- [Running Shoes](https://torquestudio.es/umbra.html): Show the engineering, skip the hype.
+- [Architecture Firm](https://torquestudio.es/obra-gris.html): Feel the buildings before you meet the architect.
+- [Urban Sunglasses](https://torquestudio.es/obskura.html): Six frames. 640 pairs. Then gone.
+- [IT Company](https://torquestudio.es/tessera.html): A product you can’t see, made trustworthy.
+- [Beverage](https://torquestudio.es/undergrove.html): A soda that explains itself.
 
 ## Contact
 

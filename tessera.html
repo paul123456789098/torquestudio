@@ -4,170 +4,26 @@
    sections are not re-measured mid-scroll (the visible jumps). Width changes and big height changes (rotation, keyboard) pass. */
 (function(){ if(!window.matchMedia||!matchMedia('(pointer:coarse)').matches) return; var w=innerWidth,h=innerHeight;
  addEventListener('resize',function(e){ var nw=innerWidth,nh=innerHeight; if(nw===w&&Math.abs(nh-h)<160){ e.stopImmediatePropagation(); return; } w=nw; h=nh; },true); })();</script>
-<title>Tessera — Distributed Object Storage</title>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="Tessera, distributed object storage. Every object is split into 64 encrypted shards across three continents; any 40 rebuild it. 9 ms reads, no egress fees.">
-<meta name="robots" content="noindex, follow">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://torquestudio.es/tessera.html">
-<meta property="og:site_name" content="Tessera">
-<meta property="og:title" content="Tessera — distributed object storage">
-<meta property="og:description" content="Every object is split into 64 encrypted shards across three continents. Any 40 rebuild it. 9 ms reads, no egress fees.">
-<meta property="og:image" content="https://torquestudio.es/og-work-it-company.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Tessera — distributed object storage">
-<meta name="twitter:description" content="64 shards, any 40 rebuild the whole. 9 ms reads, no egress fees.">
-<meta name="twitter:image" content="https://torquestudio.es/og-work-it-company.jpg">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <meta name="theme-color" content="#05050c">
 <link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt — site summary for AI systems">
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@graph": [
-  {
-   "@type": "Organization",
-   "@id": "https://torquestudio.es/tessera.html#org",
-   "name": "Tessera",
-   "url": "https://torquestudio.es/tessera.html",
-   "description": "Distributed object storage built on 64/40 erasure coding across three continents.",
-   "logo": {
-    "@type": "ImageObject",
-    "url": "https://torquestudio.es/og-work-it-company.jpg"
-   },
-   "areaServed": "Worldwide",
-   "location": [
-    {
-     "@type": "Place",
-     "name": "Amsterdam"
-    },
-    {
-     "@type": "Place",
-     "name": "Ashburn"
-    },
-    {
-     "@type": "Place",
-     "name": "Singapore"
-    },
-    {
-     "@type": "Place",
-     "name": "Reykjavík"
-    },
-    {
-     "@type": "Place",
-     "name": "São Paulo"
-    }
-   ],
-   "disambiguatingDescription": "Fictional brand created as a design study."
-  },
-  {
-   "@type": "WebSite",
-   "@id": "https://torquestudio.es/tessera.html#site",
-   "url": "https://torquestudio.es/tessera.html",
-   "name": "Tessera",
-   "publisher": {
-    "@id": "https://torquestudio.es/tessera.html#org"
-   },
-   "inLanguage": "en",
-   "dateModified": "2026-09-11"
-  },
-  {
-   "@type": "SoftwareApplication",
-   "@id": "https://torquestudio.es/tessera.html#product",
-   "name": "Tessera",
-   "applicationCategory": "Object storage",
-   "operatingSystem": "Cloud service, S3-compatible API",
-   "url": "https://torquestudio.es/tessera.html",
-   "publisher": {
-    "@id": "https://torquestudio.es/tessera.html#org"
-   },
-   "description": "Every object is split into 64 encrypted shards and spread across three continents; any 40 rebuild it. Median read 9 ms for hot and archived data alike. No egress fees.",
-   "featureList": [
-    "Reed–Solomon 64/40 erasure coding at 1.6x overhead",
-    "9 ms median read, no cold tier",
-    "Client-side encryption, customer-held keys",
-    "Merkle-root integrity proof per object, re-verified every 72 hours",
-    "Object lock and legal hold",
-    "S3-compatible API",
-    "Zero egress fees",
-    "38 regions on three continents"
-   ],
-   "offers": [
-    {
-     "@type": "Offer",
-     "name": "Shard",
-     "price": "4",
-     "priceCurrency": "USD",
-     "unitText": "TB per month",
-     "description": "Up to 50 TB, eleven nines of durability, S3-compatible API, community support.",
-     "availability": "https://schema.org/InStock"
-    },
-    {
-     "@type": "Offer",
-     "name": "Lattice",
-     "price": "3",
-     "priceCurrency": "USD",
-     "unitText": "TB per month",
-     "description": "Unlimited volume, object lock and legal hold, private placement policies, 99.99% availability SLA, a named engineer.",
-     "availability": "https://schema.org/InStock"
-    },
-    {
-     "@type": "Offer",
-     "name": "Sovereign",
-     "priceSpecification": {
-      "@type": "PriceSpecification",
-      "priceCurrency": "USD",
-      "price": "0",
-      "description": "Custom pricing"
-     },
-     "description": "Jurisdiction pinning, dedicated hardware batches, on-prem witness nodes, quarterly audit package.",
-     "availability": "https://schema.org/InStock"
-    }
-   ]
-  },
-  {
-   "@type": "HowTo",
-   "@id": "https://torquestudio.es/tessera.html#writepath",
-   "name": "How Tessera turns a write into a durable object",
-   "description": "Five stages between a write and a durable object.",
-   "step": [
-    {
-     "@type": "HowToStep",
-     "position": 1,
-     "name": "Ingest",
-     "text": "One TLS connection to the nearest of 38 edge points. Multipart uploads resume from the last verified block."
-    },
-    {
-     "@type": "HowToStep",
-     "position": 2,
-     "name": "Shard",
-     "text": "Reed–Solomon 64/40 in hardware. Each fragment carries its own checksum and generation number."
-    },
-    {
-     "@type": "HowToStep",
-     "position": 3,
-     "name": "Place",
-     "text": "A solver picks destinations by correlated-failure score: power grid, network transit, jurisdiction, hardware batch."
-    },
-    {
-     "@type": "HowToStep",
-     "position": 4,
-     "name": "Seal",
-     "text": "A Merkle root is written to an append-only ledger. Nothing about the object can change silently after this point."
-    },
-    {
-     "@type": "HowToStep",
-     "position": 5,
-     "name": "Serve",
-     "text": "Reads pull the forty fastest shards, not the forty nearest. Slow disks are simply outrun."
-    }
-   ]
-  }
- ]
-}
-</script>
+
 <!-- tqc:css --><style id="tqc-css">
 .tqc-bar{position:fixed;top:0;left:0;right:0;z-index:2147483000;display:flex;align-items:center;justify-content:center;gap:14px;padding:7px 14px;background:rgba(10,8,6,.9);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.8);font:500 12.5px/1.35 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;letter-spacing:0;text-transform:none}
 .tqc-bar p{margin:0}
@@ -182,6 +38,13 @@
 .tqc-btn{display:inline-flex;align-items:center;gap:10px;margin-top:30px;padding:15px 26px;border-radius:999px;background:#fff;color:#111!important;text-decoration:none;font:600 15px/1 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;letter-spacing:0;text-transform:none;transition:transform .25s,box-shadow .25s}
 .tqc-btn:hover{transform:translateY(-1px);box-shadow:0 10px 30px -10px rgba(255,255,255,.4)}
 </style><!-- /tqc -->
+<!-- tqc:seo --><title>Tessera · IT Company brand concept by Torque Studio</title>
+<meta name="description" content="Tessera: a it company brand concept by Torque Studio, a design subscription studio in Barcelona. A product you can’t see, made trustworthy. Fictional brand, real design work: art direction · product website · campaign posts · company deck.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://torquestudio.es/tessera.html">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Torque Studio"><meta property="og:title" content="Tessera · IT Company brand concept by Torque Studio"><meta property="og:description" content="Tessera: a it company brand concept by Torque Studio, a design subscription studio in Barcelona. A product you can’t see, made trustworthy. Fictional brand, real design work: art direction · product website · campaign posts · company deck."><meta property="og:url" content="https://torquestudio.es/tessera.html"><meta property="og:image" content="https://torquestudio.es/og-work-it-company.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Tessera · IT Company brand concept by Torque Studio"><meta name="twitter:description" content="Tessera: a it company brand concept by Torque Studio, a design subscription studio in Barcelona. A product you can’t see, made trustworthy. Fictional brand, real design work: art direction · product website · campaign posts · company deck."><meta name="twitter:image" content="https://torquestudio.es/og-work-it-company.jpg">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "CreativeWork", "@id": "https://torquestudio.es/tessera.html#work", "name": "Tessera — IT Company brand concept", "url": "https://torquestudio.es/tessera.html", "image": "https://torquestudio.es/og-work-it-company.jpg", "description": "Tessera: a it company brand concept by Torque Studio, a design subscription studio in Barcelona. A product you can’t see, made trustworthy. Fictional brand, real design work: art direction · product website · campaign posts · company deck.", "genre": "Brand concept", "keywords": "Art direction, Product website, Campaign posts, Company deck", "creator": {"@type": "Organization", "@id": "https://torquestudio.es/#org", "name": "Torque Studio", "url": "https://torquestudio.es/"}, "isPartOf": {"@id": "https://torquestudio.es/#website"}, "inLanguage": "en"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Torque Studio", "item": "https://torquestudio.es/"}, {"@type": "ListItem", "position": 2, "name": "Work", "item": "https://torquestudio.es/#work"}, {"@type": "ListItem", "position": 3, "name": "IT Company", "item": "https://torquestudio.es/tessera.html"}]}]}</script><!-- /tqc -->
 </head>
 <body>
 <style>
