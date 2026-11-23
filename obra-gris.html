@@ -531,6 +531,7 @@ footer{max-width:calc(var(--maxw) + 2*clamp(16px,3vw,44px));margin:0 auto;paddin
 <meta property="og:type" content="website"><meta property="og:site_name" content="Torque Studio"><meta property="og:title" content="Obra Gris · Architecture Firm brand concept by Torque Studio"><meta property="og:description" content="Obra Gris: a architecture firm brand concept by Torque Studio, a design subscription studio in Barcelona. Feel the buildings before you meet the architect. Fictional brand, real design work: art direction · studio website · poster series · studio deck."><meta property="og:url" content="https://torquestudio.es/obra-gris.html"><meta property="og:image" content="https://torquestudio.es/og-work-architecture-firm.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Obra Gris · Architecture Firm brand concept by Torque Studio"><meta name="twitter:description" content="Obra Gris: a architecture firm brand concept by Torque Studio, a design subscription studio in Barcelona. Feel the buildings before you meet the architect. Fictional brand, real design work: art direction · studio website · poster series · studio deck."><meta name="twitter:image" content="https://torquestudio.es/og-work-architecture-firm.jpg">
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "CreativeWork", "@id": "https://torquestudio.es/obra-gris.html#work", "name": "Obra Gris — Architecture Firm brand concept", "url": "https://torquestudio.es/obra-gris.html", "image": "https://torquestudio.es/og-work-architecture-firm.jpg", "description": "Obra Gris: a architecture firm brand concept by Torque Studio, a design subscription studio in Barcelona. Feel the buildings before you meet the architect. Fictional brand, real design work: art direction · studio website · poster series · studio deck.", "genre": "Brand concept", "keywords": "Art direction, Studio website, Poster series, Studio deck", "creator": {"@type": "Organization", "@id": "https://torquestudio.es/#org", "name": "Torque Studio", "url": "https://torquestudio.es/"}, "isPartOf": {"@id": "https://torquestudio.es/#website"}, "inLanguage": "en"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Torque Studio", "item": "https://torquestudio.es/"}, {"@type": "ListItem", "position": 2, "name": "Work", "item": "https://torquestudio.es/#work"}, {"@type": "ListItem", "position": 3, "name": "Architecture Firm", "item": "https://torquestudio.es/obra-gris.html"}]}]}</script><!-- /tqc -->
+<!-- tqc:mob --><style id="tqc-mob">@media(max-width:880px){.tqc-bar{-webkit-backdrop-filter:none!important;backdrop-filter:none!important;background:rgba(10,8,6,.96)!important}.glass,.card,.contact-in,.tb,.heroglass{-webkit-backdrop-filter:none!important;backdrop-filter:none!important}.glass,.card,.contact-in,.tb{background:rgba(16,18,22,.62)!important}.heroglass{background:rgba(10,12,14,.18)!important}}</style><!-- /tqc -->
 </head>
 <body class="loading">
 
@@ -939,7 +940,7 @@ addEventListener('pointermove',function(e){ PTR.x=e.clientX; PTR.y=e.clientY; },
    в тёплый по мере прохода страницы. */
 (function(){
   var cv=document.getElementById('sheet'); if(!cv) return;
-  var ctx=cv.getContext('2d'), DPR=Math.min(devicePixelRatio||1,1.5), W=0,H=0, G=96;
+  var ctx=cv.getContext('2d'), DPR=innerWidth<=880?1:Math.min(devicePixelRatio||1,1.5), W=0,H=0, G=96;
   function size(){ W=innerWidth; H=innerHeight; cv.width=W*DPR; cv.height=H*DPR; ctx.setTransform(DPR,0,0,DPR,0,0); }
   size(); addEventListener('resize',size,{passive:true});
 
@@ -1186,7 +1187,7 @@ document.getElementById('cards').innerHTML = CARDS.map(function(c){
    so the frame genuinely flies forward — same feel the rendered clips
    will have, so pacing can be judged before a single credit is spent. */
 function makeCamera(canvas, mood, seed, sceneIx){
-  var ctx=canvas.getContext('2d'), W=0,H=0,DPR=Math.min(devicePixelRatio||1,2);
+  var ctx=canvas.getContext('2d'), W=0,H=0,DPR=Math.min(devicePixelRatio||1,innerWidth<=880?1.25:2);
   var rnd=(function(x){ return function(){ x=(x*16807)%2147483647; return (x-1)/2147483646; }; })(seed*7919+13);
   var STEP=3.0, GATES=30, gates=[];
   for(var i=0;i<GATES;i++){
@@ -1365,7 +1366,7 @@ function camFor(i){ if(!cams[i]) cams[i]=makeCamera(camCanvas,SCENES[i].mood,i+1
    берём каждый второй кадр (разница в движении не читается) и держим меньше потоков */
 var FILM_MOB = matchMedia('(max-width:760px)').matches;
 var FILM={dir:'assets/frames/', count:241, pad:3, step:FILM_MOB?2:1, imgs:[], loaded:0, ok:false, last:-1, ctx:null, W:0,H:0,
-  DPR:Math.min(devicePixelRatio||1,FILM_MOB?1.35:1.6)};
+  DPR:Math.min(devicePixelRatio||1,FILM_MOB?1:1.6)};
 FILM.wanted=function(i){ return FILM.step===1 || i%FILM.step===0 || i===FILM.count-1; };
 (function(){
   var cv=document.createElement('canvas'); cv.className='film'; filmEl.insertBefore(cv,filmEl.firstChild);
