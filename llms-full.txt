@@ -128,7 +128,7 @@ Your first month comes with a guarantee. If you feel it's not working, you can s
 Yes. The subscription is month to month. Give us two weeks' notice to pause or cancel, and your unused working days are saved for later.
 
 **Do you build full company websites?**
-Yes, as a separate project outside the subscription: from €3,000 to €10,000. A full company website is designed, built, launched and hosted by us, and the final price depends on the number of pages, functionality and content, so it does not take time away from your monthly queue. Campaign landing pages for ads, launches and events are included in our top plan, Full Throttle.
+Yes, as a separate project outside the subscription: from €3,000. A full company website is designed, built, launched and hosted by us, and the final price depends on the number of pages, functionality and content, so it does not take time away from your monthly queue. Campaign landing pages for ads, launches and events are included in our top plan, Full Throttle.
 
 **What if we're in a different time zone?**
 We work async in Slack, so you don't need to be online at the same time. Our working hours are 10:00 to 18:00 CET, Monday to Friday, and we follow the Spanish holiday calendar, so you always know in advance when we're off.
