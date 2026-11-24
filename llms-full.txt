@@ -80,7 +80,7 @@ Why it works: people want what they might miss. A limited run that people can se
 
 ### IT Company (concept)
 Live concept site: https://torquestudio.es/sonde/
-One bad night, replayed in 44 seconds.
+Monitoring that lets the team sleep.
 Scope: Art direction · Product website · Campaign posts · Company deck.
 Every monitoring tool sells the same thing: more dashboards, more alerts, and a pager that goes off at 3 a.m. This one fixes the outage itself and lets the team sleep. So the brand tells a single story: one night, one incident, 44 seconds. Scrolling the site moves the clock, and the deck and the posts each stop on one moment of that night.
 Why it works: engineers don’t trust claims, they trust a replay. Showing one incident from the first slow request to the rollback proves the product faster than any feature list.
