@@ -79,11 +79,11 @@ Most eyewear brands sell endless collections, and nothing in them feels special.
 Why it works: people want what they might miss. A limited run that people can see running out sells faster than any discount, and every piece of the brand world reminds you of the clock.
 
 ### IT Company (concept)
-Live concept site: https://torquestudio.es/tessera.html
-A product you can’t see, made trustworthy.
+Live concept site: https://torquestudio.es/sonde/
+One bad night, replayed in 44 seconds.
 Scope: Art direction · Product website · Campaign posts · Company deck.
-The company stores other companies’ data. There’s nothing to photograph, and everyone in the industry says the same thing: “trust us”. So this brand is built around one idea: proof. It explains how the system works instead of asking for trust, and the visuals (glass, light, precision) make an invisible service feel solid.
-Why it works: in a market where every competitor promises security, the one that shows how it works wins the sale.
+Every monitoring tool sells the same thing: more dashboards, more alerts, and a pager that goes off at 3 a.m. This one fixes the outage itself and lets the team sleep. So the brand tells a single story: one night, one incident, 44 seconds. Scrolling the site moves the clock, and the deck and the posts each stop on one moment of that night.
+Why it works: engineers don’t trust claims, they trust a replay. Showing one incident from the first slow request to the rollback proves the product faster than any feature list.
 
 ### Beverage (concept)
 Live concept site: https://torquestudio.es/undergrove.html
