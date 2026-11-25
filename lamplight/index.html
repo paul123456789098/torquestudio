@@ -320,6 +320,27 @@ body.ready .loading{opacity:0}
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Lamplight Gaming · Betting &amp; iGaming brand concept by Torque Studio"><meta name="twitter:description" content="Lamplight Gaming: a betting &amp; igaming brand concept by Torque Studio, a design subscription studio in Barcelona. Fewer slots, each one finished. Fictional brand, real design work: art direction · studio website · campaign posts · partner deck."><meta name="twitter:image" content="https://torquestudio.es/og-work-betting-igaming.jpg">
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "CreativeWork", "@id": "https://torquestudio.es/lamplight/#work", "name": "Lamplight Gaming — Betting & iGaming brand concept", "url": "https://torquestudio.es/lamplight/", "image": "https://torquestudio.es/og-work-betting-igaming.jpg", "description": "Lamplight Gaming: a betting & igaming brand concept by Torque Studio, a design subscription studio in Barcelona. Fewer slots, each one finished. Fictional brand, real design work: art direction · studio website · campaign posts · partner deck.", "genre": "Brand concept", "keywords": "Art direction, Studio website, Campaign posts, Partner deck", "creator": {"@type": "Organization", "@id": "https://torquestudio.es/#org", "name": "Torque Studio", "url": "https://torquestudio.es/"}, "isPartOf": {"@id": "https://torquestudio.es/#website"}, "inLanguage": "en"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Torque Studio", "item": "https://torquestudio.es/"}, {"@type": "ListItem", "position": 2, "name": "Work", "item": "https://torquestudio.es/#work"}, {"@type": "ListItem", "position": 3, "name": "Betting & iGaming", "item": "https://torquestudio.es/lamplight/"}]}]}</script><!-- /tqc -->
 <!-- tqc:mob --><style id="tqc-mob">@media(max-width:880px){.tqc-bar{-webkit-backdrop-filter:none!important;backdrop-filter:none!important;background:rgba(10,8,6,.96)!important}.hdr,.gm{-webkit-backdrop-filter:none!important;backdrop-filter:none!important}.hdr{background:rgba(20,3,10,.9)!important}.gm{background:rgba(10,1,5,.92)!important}}</style><!-- /tqc -->
+<!-- tqc:soft --><script>
+/* no GPU (crawlers, remote desktops, old machines): WebGL runs on the CPU and one frame of the street takes seconds, so the page is shown as plain sections instead */
+(function(){var d=document.documentElement,soft=/bot\b|crawl|spider|Google-InspectionTool|GoogleOther|bingpreview/i.test(navigator.userAgent);
+if(!soft)try{var c=document.createElement('canvas'),g=c.getContext('webgl2');if(!g)soft=true;else{var e=g.getExtension('WEBGL_debug_renderer_info'),r=e?String(g.getParameter(e.UNMASKED_RENDERER_WEBGL)):'';
+if(/swiftshader|llvmpipe|software|basic render/i.test(r))soft=true;var x=g.getExtension('WEBGL_lose_context');x&&x.loseContext()}}catch(err){soft=true}
+if(/[?&]3d=1/.test(location.search))soft=false;if(soft){window.__no3d=1;d.classList.add('no3d');document.addEventListener('DOMContentLoaded',function(){var a=document.querySelector('#p-way .pin'),b=document.getElementById('tickets');a&&b&&a.appendChild(b)})}})();
+</script>
+<style>
+html.no3d #world,html.no3d .scrim,html.no3d .portal,html.no3d .wlabel,html.no3d .street,html.no3d #loader,html.no3d #route,html.no3d .hint,html.no3d .loading,html.no3d .tap,html.no3d .panel .note,html.no3d .ticket canvas,html.no3d .ticket .tip,html.no3d .ticket .frame{display:none!important}
+html.no3d body{background:radial-gradient(120% 70% at 50% 0%,#2a0714 0%,#12020a 70%) #12020a;background-attachment:fixed}
+html.no3d main{display:flex;flex-direction:column;gap:clamp(72px,12vh,150px);padding:clamp(120px,18vh,190px) var(--pad) clamp(60px,9vh,110px)}
+html.no3d .panel{position:static;transform:none;visibility:visible;pointer-events:auto;width:min(720px,100%)}
+html.no3d .panel .pin>*{opacity:1;transform:none}
+html.no3d .tickets{position:static;inset:auto;overflow:visible;display:flex;flex-wrap:wrap;gap:20px;padding:0 var(--pad) clamp(70px,10vh,120px)}
+html.no3d .tickets .ticket{position:relative;left:auto;top:auto;transform:none!important;opacity:1!important;width:min(340px,100%);height:auto;aspect-ratio:1.18;pointer-events:auto}
+html.no3d .tickets{padding:0;margin-top:26px;width:100%}
+html.no3d .vqe li{opacity:1}html.no3d .vqe li b{background:var(--yellow)}
+html.no3d #p-about .lead,html.no3d .ginfo p.d{display:block!important}
+html.no3d #p-faq #qas,html.no3d #p-faq .qa{display:block!important}html.no3d #p-faq .qa button{display:flex!important;cursor:default}html.no3d .qchips{display:none!important}
+html.no3d .qa .a{grid-template-rows:1fr}html.no3d .qa .a p{opacity:1}
+</style><!-- /tqc -->
 </head>
 <body class="at-home">
 <div id="loader" aria-hidden="true"><div class="ld"><img src="img/logo-white.f65ed542.webp" alt="" width="171" height="60"><i><b id="ldBar"></b></i></div></div><script>setTimeout(function(){var l=document.getElementById("loader");if(l){l.classList.add("gone");setTimeout(function(){l.style.display="none"},800)}},25000)</script>
@@ -418,7 +439,7 @@ body.ready .loading{opacity:0}
 
 <script src="js/gsap.min.js"></script>
 <script src="js/lenis.min.js"></script>
-<script src="js/lamplight.js"></script>
+<script src="js/lamplight.js?v=2"></script>
 
 <script>
 (()=>{
@@ -635,7 +656,7 @@ function spin(){if(spinning||!slot||!slot.impl)return;spinning=true;spins++;slot
       const mm=$('#mult');if(f.m&&mm&&hasG){const o={v:0};gsap.to(o,{v:f.m,duration:1.6,ease:'power2.out',onUpdate(){mm.textContent=Math.round(o.v)+'x'}})}}}),reduce?0:260)}
 
 const fontsOk=document.fonts&&document.fonts.ready?Promise.race([document.fonts.ready,new Promise(r=>setTimeout(r,1500))]):Promise.resolve();
-fontsOk.then(()=>{if(window.BDWorld)boot()});
+fontsOk.then(()=>{if(window.BDWorld&&!window.__no3d)boot()});
 
 })();
 </script>
